@@ -806,91 +806,97 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="vjMUcYxqVmDe04yaSwqs" name="第 7 页">
-    <mxGraphModel dx="2039" dy="733" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram id="Qz6MsdOXmzK1zUkT9cK3" name="第 8 页">
+    <mxGraphModel dx="1585" dy="958" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-3" parent="0" style="swimlane;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#BAB0AC;strokeDashed=1;" value="GitHub平台（GitHub API）" vertex="1">
-          <mxGeometry height="640" width="300" x="270" y="70" as="geometry" />
-        </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-2" parent="0" style="swimlane;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#BAB0AC;strokeDashed=1;" value="NexusGo后端（nexusgo-gateway + nexusgo-user）" vertex="1">
-          <mxGeometry height="640" width="300" x="-30" y="70" as="geometry" />
-        </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-1" parent="0" style="swimlane;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#BAB0AC;strokeDashed=1;" value="用户浏览器（User Browser）" vertex="1">
-          <mxGeometry height="640" width="300" x="-330" y="70" as="geometry" />
-        </mxCell>
         <mxCell id="1" parent="0" />
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-23" edge="1" parent="1" source="LlkxtwRtW1aPXRwxqxcy-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#A8201A;fontColor=#143642;fillColor=#FAE5C7;" target="LlkxtwRtW1aPXRwxqxcy-5">
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="750" width="960" x="250" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-7" edge="1" parent="1" source="eUGwW7DA47dC0xOrf0Xu-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;fontStyle=1" target="eUGwW7DA47dC0xOrf0Xu-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-24" edge="1" parent="1" source="LlkxtwRtW1aPXRwxqxcy-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#A8201A;fontColor=#143642;fillColor=#FAE5C7;" target="LlkxtwRtW1aPXRwxqxcy-5">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-25" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeColor=#A8201A;fontColor=#143642;fillColor=#FAE5C7;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="LlkxtwRtW1aPXRwxqxcy-5" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="40" y="120" as="sourcePoint" />
-            <mxPoint x="90" y="70" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-4" parent="0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4E79A7;strokeColor=#000000;" value="① 用户触发&#xa;用户点击&#39;GitHub登录&#39;按钮" vertex="1">
-          <mxGeometry height="80" width="200" x="-290" y="150" as="geometry" />
-        </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-5" parent="0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F28E2B;strokeColor=#000000;" value="② 前端重定向&#xa;GET https://github.com/login/oauth/authorize?client_id=xxx&amp;redirect_uri=xxx" vertex="1">
-          <mxGeometry height="80" width="240" y="150" as="geometry" />
-        </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-6" parent="0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BAB0AC;strokeColor=#000000;" value="③ GitHub展示授权页面&#xa;用户确认授权" vertex="1">
+        <mxCell id="eUGwW7DA47dC0xOrf0Xu-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;opacity=50;fontSize=12;fontStyle=1" value="① 用户触发&#xa;用户点击&#39;GitHub登录&#39;按钮" vertex="1">
           <mxGeometry height="80" width="240" x="294" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-7" parent="0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4E79A7;strokeColor=#000000;" value="④ GitHub回调&#xa;GET /api/auth/oauth2/github/callback?code=xxx" vertex="1">
-          <mxGeometry height="80" width="240" x="294" y="280" as="geometry" />
-        </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-8" parent="0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F28E2B;strokeColor=#000000;strokeWidth=2;" value="⑤ 请求Access Token&#xa;POST https://github.com/login/oauth/access_token&#xa;参数: client_id, client_secret, code" vertex="1">
-          <mxGeometry height="80" width="240" y="260" as="geometry" />
-        </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-9" parent="0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BAB0AC;strokeColor=#000000;" value="⑥ 返回Access Token" vertex="1">
-          <mxGeometry height="80" width="240" x="294" y="400" as="geometry" />
-        </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-10" parent="0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F28E2B;strokeColor=#000000;" value="⑦ 请求用户信息&#xa;GET https://api.github.com/user&#xa;Header: Authorization: Bearer {access_token}" vertex="1">
-          <mxGeometry height="80" width="240" y="370" as="geometry" />
-        </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-11" parent="0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BAB0AC;strokeColor=#000000;" value="⑧ 返回用户信息&#xa;username, email, avatar_url等" vertex="1">
-          <mxGeometry height="80" width="240" x="294" y="585" as="geometry" />
-        </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-26" edge="1" parent="0" source="LlkxtwRtW1aPXRwxqxcy-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#A8201A;fontColor=#143642;fillColor=#FAE5C7;" target="LlkxtwRtW1aPXRwxqxcy-13" value="">
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-8" edge="1" parent="1" source="eUGwW7DA47dC0xOrf0Xu-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;fontSize=12;fontStyle=1" target="eUGwW7DA47dC0xOrf0Xu-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-12" parent="0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#59A14F;strokeColor=#000000;strokeWidth=2;" value="⑨ 内部处理&#xa;1. 查找或创建本地用户&#xa;2. 记录第三方绑定关系&#xa;3. Sa-Token执行登录，生成JWT" vertex="1">
-          <mxGeometry height="80" width="240" y="480" as="geometry" />
+        <mxCell id="eUGwW7DA47dC0xOrf0Xu-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F28E2B;strokeColor=#000000;opacity=50;fontSize=12;fontStyle=1" value="② 前端重定向&#xa;GET https://github.com/login/oauth/authorize?client_id=xxx&amp;amp;redirect_uri=xxx" vertex="1">
+          <mxGeometry height="80" width="240" x="610" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-13" parent="0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#59A14F;strokeColor=#000000;strokeWidth=2;" value="⑩ 返回Token和用户信息&#xa;Response: { token, userInfo }" vertex="1">
-          <mxGeometry height="80" width="240" y="600" as="geometry" />
-        </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-14" edge="1" parent="0" source="LlkxtwRtW1aPXRwxqxcy-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" target="LlkxtwRtW1aPXRwxqxcy-5">
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-11" edge="1" parent="1" source="eUGwW7DA47dC0xOrf0Xu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;fontStyle=1" target="eUGwW7DA47dC0xOrf0Xu-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-15" edge="1" parent="0" source="LlkxtwRtW1aPXRwxqxcy-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" target="LlkxtwRtW1aPXRwxqxcy-6">
+        <mxCell id="eUGwW7DA47dC0xOrf0Xu-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BAB0AC;strokeColor=#000000;opacity=50;fontSize=12;fontStyle=1" value="③ GitHub展示授权页面&#xa;用户确认授权" vertex="1">
+          <mxGeometry height="80" width="240" x="940" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-16" edge="1" parent="1" source="eUGwW7DA47dC0xOrf0Xu-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;fontStyle=1" target="eUGwW7DA47dC0xOrf0Xu-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-16" edge="1" parent="0" source="LlkxtwRtW1aPXRwxqxcy-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" target="LlkxtwRtW1aPXRwxqxcy-7">
+        <mxCell id="eUGwW7DA47dC0xOrf0Xu-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4E79A7;strokeColor=#000000;opacity=50;fontSize=12;fontStyle=1" value="④ GitHub回调&#xa;GET /api/auth/oauth2/github/callback?code=xxx" vertex="1">
+          <mxGeometry height="80" width="240" x="940" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-17" edge="1" parent="1" source="eUGwW7DA47dC0xOrf0Xu-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;fontStyle=1" target="eUGwW7DA47dC0xOrf0Xu-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-17" edge="1" parent="0" source="LlkxtwRtW1aPXRwxqxcy-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" target="LlkxtwRtW1aPXRwxqxcy-8">
+        <mxCell id="eUGwW7DA47dC0xOrf0Xu-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F28E2B;strokeColor=#000000;strokeWidth=2;opacity=50;fontSize=12;fontStyle=1" value="⑤ 请求Access Token&#xa;POST https://github.com/login/oauth/access_token&#xa;参数: client_id, client_secret, code" vertex="1">
+          <mxGeometry height="80" width="240" x="610" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-18" edge="1" parent="1" source="eUGwW7DA47dC0xOrf0Xu-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;fontStyle=1" target="eUGwW7DA47dC0xOrf0Xu-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-18" edge="1" parent="0" source="LlkxtwRtW1aPXRwxqxcy-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" target="LlkxtwRtW1aPXRwxqxcy-9">
+        <mxCell id="eUGwW7DA47dC0xOrf0Xu-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BAB0AC;strokeColor=#000000;opacity=50;fontSize=12;fontStyle=1" value="⑥ 返回Access Token" vertex="1">
+          <mxGeometry height="80" width="240" x="940" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-19" edge="1" parent="1" source="eUGwW7DA47dC0xOrf0Xu-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;fontStyle=1" target="eUGwW7DA47dC0xOrf0Xu-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-19" edge="1" parent="0" source="LlkxtwRtW1aPXRwxqxcy-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" target="LlkxtwRtW1aPXRwxqxcy-10">
+        <mxCell id="eUGwW7DA47dC0xOrf0Xu-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F28E2B;strokeColor=#000000;opacity=50;fontSize=12;fontStyle=1" value="⑦ 请求用户信息&#xa;GET https://api.github.com/user&#xa;Header: Authorization: Bearer {access_token}" vertex="1">
+          <mxGeometry height="80" width="240" x="610" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-20" edge="1" parent="1" source="eUGwW7DA47dC0xOrf0Xu-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;fontStyle=1" target="eUGwW7DA47dC0xOrf0Xu-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-20" edge="1" parent="0" source="LlkxtwRtW1aPXRwxqxcy-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" target="LlkxtwRtW1aPXRwxqxcy-11">
+        <mxCell id="eUGwW7DA47dC0xOrf0Xu-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BAB0AC;strokeColor=#000000;opacity=50;fontSize=12;fontStyle=1" value="⑧ 返回用户信息&#xa;username, email, avatar_url等" vertex="1">
+          <mxGeometry height="80" width="240" x="940" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-21" edge="1" parent="1" source="eUGwW7DA47dC0xOrf0Xu-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;fontStyle=1" target="eUGwW7DA47dC0xOrf0Xu-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-21" edge="1" parent="0" source="LlkxtwRtW1aPXRwxqxcy-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" target="LlkxtwRtW1aPXRwxqxcy-12">
+        <mxCell id="eUGwW7DA47dC0xOrf0Xu-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#59A14F;strokeColor=#000000;strokeWidth=2;opacity=50;fontSize=12;fontStyle=1" value="⑨ 内部处理&#xa;1. 查找或创建本地用户&#xa;2. 记录第三方绑定关系&#xa;3. Sa-Token执行登录，生成JWT" vertex="1">
+          <mxGeometry height="80" width="240" x="610" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="eUGwW7DA47dC0xOrf0Xu-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#59A14F;strokeColor=#000000;strokeWidth=2;opacity=50;fontSize=12;fontStyle=1" value="⑩ 返回Token和用户信息&#xa;Response: { token, userInfo }" vertex="1">
+          <mxGeometry height="80" width="240" x="610" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;opacity=60;fontSize=12;fontStyle=1" value="用户浏览器（User）" vertex="1">
+          <mxGeometry height="50" width="290" x="250" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;opacity=60;fontSize=12;fontStyle=1" value="NexusGo后端（gateway+user）" vertex="1">
+          <mxGeometry height="50" width="290" x="570" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;fontSize=12;fontStyle=1" value="GitHub平台" vertex="1">
+          <mxGeometry height="50" width="290" x="890" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;opacity=50;fontSize=12;fontStyle=1" value="⑪ 用户第三方登陆成功" vertex="1">
+          <mxGeometry height="80" width="240" x="294" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-23" edge="1" parent="1" source="eUGwW7DA47dC0xOrf0Xu-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.971;entryY=0.641;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;fontStyle=1" target="GxZy1B7PG1bG5SPwWitc-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LlkxtwRtW1aPXRwxqxcy-22" edge="1" parent="0" source="LlkxtwRtW1aPXRwxqxcy-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" target="LlkxtwRtW1aPXRwxqxcy-13">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-25" edge="1" parent="1" source="GxZy1B7PG1bG5SPwWitc-24" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0.337;exitY=1.001;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="GxZy1B7PG1bG5SPwWitc-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="520" y="180" as="sourcePoint" />
+            <mxPoint x="570" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-26" edge="1" parent="1" source="GxZy1B7PG1bG5SPwWitc-24" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0.672;exitY=0.997;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="840" y="180" as="sourcePoint" />
+            <mxPoint x="890" y="130" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
