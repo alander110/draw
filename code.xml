@@ -324,7 +324,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="yThCKtsgf5r57pLvZqIU" name="5-6：行程协作编辑完整时序图">
-    <mxGraphModel dx="2575" dy="1558" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2289" dy="1384" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -364,98 +364,98 @@
         <mxCell id="kYNHzLGXDEgpCWb9Tzq3-50" parent="1" style="shape=rect;html=1;fillColor=none;strokeColor=#B07AA1;strokeWidth=1;dashed=1;dashPattern=8 8;whiteSpace=wrap;fontSize=12;" value="" vertex="1">
           <mxGeometry height="1550" width="2" x="1959" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-52" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#3399FF;strokeWidth=2;fontColor=#3399FF;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤②&lt;/b&gt;：ACTIVITY_LOCK (code=1011)&#xa;{itineraryId: 42, activityId: 128, field: &quot;title&quot;}&#xa;协议：WebSocket二进制帧">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-52" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#3399FF;strokeWidth=2;fontColor=#3399FF;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤2&lt;/b&gt;：ACTIVITY_LOCK (code=1011)&lt;br&gt;{itineraryId: 42, activityId: 128, field: &quot;title&quot;}&lt;br&gt;协议：WebSocket二进制帧">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="180" y="300" as="sourcePoint" />
             <mxPoint x="600" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-53" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#006600;" value="&lt;b&gt;步骤③&lt;/b&gt;：tryLock(&quot;42:128:title&quot;, userId=A, userName=&quot;张三&quot;)&#xa;返回：加锁成功（锁当前空闲）">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-53" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#006600;" value="&lt;b&gt;步骤3&lt;/b&gt;：tryLock(&quot;42:128:title&quot;, userId=A, userName=&quot;张三&quot;)&lt;br&gt;返回：加锁成功（锁当前空闲）">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="400" as="sourcePoint" />
             <mxPoint x="950" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-54" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;strokeColor=#3399FF;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#3399FF;" value="&lt;b&gt;步骤④&lt;/b&gt;：锁获取成功响应&#xa;{success: true, lockKey: &quot;42:128:title&quot;}">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-54" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;strokeColor=#3399FF;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#3399FF;" value="&lt;b&gt;步骤4&lt;/b&gt;：锁获取成功响应&lt;br&gt;{success: true, lockKey: &quot;42:128:title&quot;}">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="500" as="sourcePoint" />
             <mxPoint x="180" y="500" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-55" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#6600CC;strokeWidth=2;fontColor=#6600CC;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑤&lt;/b&gt;：广播 ACTIVITY_LOCK (code=1011)&lt;br&gt;{activityId: 128, field: &quot;title&quot;, lockedBy: &quot;张三&quot;}">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-55" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#6600CC;strokeWidth=2;fontColor=#6600CC;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤5&lt;/b&gt;：广播 ACTIVITY_LOCK (code=1011)&lt;br&gt;{activityId: 128, field: &quot;title&quot;, lockedBy: &quot;张三&quot;}">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="600" as="sourcePoint" />
             <mxPoint x="1960" y="600" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-57" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#3399FF;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#3399FF;" value="&lt;b&gt;步骤⑦&lt;/b&gt;：ACTIVITY_EDIT (code=1013)&#xa;{itineraryId: 42, detailId: 128, field: &quot;title&quot;, value: &quot;外滩夜景游览&quot;}">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-57" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#3399FF;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#3399FF;" value="&lt;b&gt;步骤9&lt;/b&gt;：ACTIVITY_EDIT (code=1013)&lt;br&gt;{itineraryId: 42, detailId: 128, field: &quot;title&quot;, value: &quot;外滩夜景游览&quot;}">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="180" y="800" as="sourcePoint" />
-            <mxPoint x="600" y="800" as="targetPoint" />
+            <mxPoint x="180" y="1048" as="sourcePoint" />
+            <mxPoint x="600" y="1048" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-58" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#006600;" value="&lt;b&gt;步骤⑧&lt;/b&gt;：checkLock(&quot;42:128:title&quot;, userId=A)&#xa;返回：验证通过（A是锁持有者）">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-58" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#006600;" value="&lt;b&gt;步骤10&lt;/b&gt;：checkLock(&quot;42:128:title&quot;, userId=A)&lt;br&gt;返回：验证通过（A是锁持有者）">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="600" y="900" as="sourcePoint" />
-            <mxPoint x="950" y="900" as="targetPoint" />
+            <mxPoint x="600" y="1148" as="sourcePoint" />
+            <mxPoint x="950" y="1148" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-59" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=3;fontStyle=1;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#006600;" value="&lt;b&gt;步骤⑨&lt;/b&gt;：Feign调用 ItineraryRemoteService.updateDetail(42, 128, &quot;title&quot;, &quot;外滩夜景游览&quot;)&#xa;OpenFeign + Same-Token鉴权">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-59" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=3;fontStyle=1;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#006600;" value="&lt;b&gt;步骤11&lt;/b&gt;：Feign调用 ItineraryRemoteService.updateDetail(42, 128, &quot;title&quot;, &quot;外滩夜景游览&quot;)&lt;br&gt;OpenFeign + Same-Token鉴权">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="600" y="1000" as="sourcePoint" />
-            <mxPoint x="1299" y="1000" as="targetPoint" />
+            <mxPoint x="600" y="1248" as="sourcePoint" />
+            <mxPoint x="1299" y="1248" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-60" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#F28E2B;strokeWidth=3;fontStyle=1;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#F28E2B;" value="&lt;b&gt;步骤⑩&lt;/b&gt;：UPDATE itinerary_detail SET title=&#39;外滩夜景游览&#39; WHERE id=128&#xa;返回：更新成功（1 row affected）">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-60" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#F28E2B;strokeWidth=3;fontStyle=1;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#F28E2B;" value="&lt;b&gt;步骤12&lt;/b&gt;：UPDATE itinerary_detail SET title=&#39;外滩夜景游览&#39; WHERE id=128&lt;br&gt;返回：更新成功（1 row affected）">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1300" y="1100" as="sourcePoint" />
-            <mxPoint x="1610" y="1100" as="targetPoint" />
+            <mxPoint x="1300" y="1348" as="sourcePoint" />
+            <mxPoint x="1610" y="1348" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-61" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;strokeColor=#F28E2B;strokeWidth=3;fontStyle=1;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#F28E2B;" value="&lt;b&gt;步骤⑪&lt;/b&gt;：持久化成功响应">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-61" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;strokeColor=#F28E2B;strokeWidth=3;fontStyle=1;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#F28E2B;" value="&lt;b&gt;步骤13&lt;/b&gt;：持久化成功响应">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1610" y="1200" as="sourcePoint" />
-            <mxPoint x="1300" y="1200" as="targetPoint" />
+            <mxPoint x="1610" y="1448" as="sourcePoint" />
+            <mxPoint x="1300" y="1448" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-62" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#B07AA1;strokeWidth=2;fontColor=#6600CC;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑫&lt;/b&gt;：广播 ACTIVITY_EDIT (code=1013)&lt;br&gt;{activityId: 128, field: &quot;title&quot;, value: &quot;外滩夜景游览&quot;, editedBy: &quot;张三&quot;}">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-62" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#B07AA1;strokeWidth=2;fontColor=#6600CC;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤14&lt;/b&gt;：广播 ACTIVITY_EDIT (code=1013)&lt;br&gt;{activityId: 128, field: &quot;title&quot;, value: &quot;外滩夜景游览&quot;, editedBy: &quot;张三&quot;}">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="600" y="1300" as="sourcePoint" />
-            <mxPoint x="1960" y="1300" as="targetPoint" />
+            <mxPoint x="600" y="1548" as="sourcePoint" />
+            <mxPoint x="1960" y="1548" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-63" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#6600CC;strokeWidth=2;fontColor=#6600CC;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑬&lt;/b&gt;：广播 ACTIVITY_UNLOCK (code=1012)&lt;br&gt;{activityId: 128, field: &quot;title&quot;}">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-63" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#6600CC;strokeWidth=2;fontColor=#6600CC;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤15&lt;/b&gt;：广播 ACTIVITY_UNLOCK (code=1012)&lt;br&gt;{activityId: 128, field: &quot;title&quot;}">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="600" y="1400" as="sourcePoint" />
-            <mxPoint x="1960" y="1400" as="targetPoint" />
+            <mxPoint x="600" y="1648" as="sourcePoint" />
+            <mxPoint x="1960" y="1648" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-64" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#3399FF;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#3399FF;" value="&lt;b&gt;步骤⑭&lt;/b&gt;：ACTIVITY_CURSOR (code=1014)&#xa;{itineraryId: 42, detailId: 129, field: &quot;startTime&quot;}">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-64" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#3399FF;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#3399FF;" value="&lt;b&gt;步骤6&lt;/b&gt;：ACTIVITY_CURSOR (code=1014)&lt;br&gt;{itineraryId: 42, detailId: 129, field: &quot;startTime&quot;}">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="180" y="1500" as="sourcePoint" />
-            <mxPoint x="600" y="1500" as="targetPoint" />
+            <mxPoint x="180" y="700" as="sourcePoint" />
+            <mxPoint x="600" y="700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-65" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#6600CC;strokeWidth=2;fontColor=#6600CC;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑭&lt;/b&gt;：广播 ACTIVITY_CURSOR (code=1014)&lt;br&gt;{itineraryId: 42, detailId: 129, field: &quot;startTime&quot;}">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-65" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#6600CC;strokeWidth=2;fontColor=#6600CC;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤7&lt;/b&gt;：广播 ACTIVITY_CURSOR (code=1014)&lt;br&gt;{itineraryId: 42, detailId: 129, field: &quot;startTime&quot;}">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="600" y="1600" as="sourcePoint" />
-            <mxPoint x="1960" y="1600" as="targetPoint" />
+            <mxPoint x="600" y="800" as="sourcePoint" />
+            <mxPoint x="1960" y="800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-68" parent="1" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;labelBackgroundColor=none;fontFamily=Helvetica;aspect=fixed;fontSize=19;" value="&lt;b style=&quot;forced-color-adjust: none; color: rgb(78, 121, 167); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;步骤①&lt;/b&gt;&lt;span style=&quot;color: rgb(78, 121, 167); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;：用户A点击标题字段进入&lt;span&gt;编辑&lt;/span&gt;&lt;/span&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(78, 121, 167); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(78, 121, 167); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;效果：用户点击行程“外滩游览”的标题字段&lt;/span&gt;" vertex="1">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-68" parent="1" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;labelBackgroundColor=none;fontFamily=Helvetica;aspect=fixed;fontSize=19;" value="&lt;b style=&quot;forced-color-adjust: none; color: rgb(78, 121, 167); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;步骤1&lt;/b&gt;&lt;span style=&quot;color: rgb(78, 121, 167); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;：用户A点击标题字段进入&lt;span&gt;编辑&lt;/span&gt;&lt;/span&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(78, 121, 167); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(78, 121, 167); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;效果：用户点击行程“外滩游览”的标题字段&lt;/span&gt;" vertex="1">
           <mxGeometry height="57.58" width="380" x="10" y="158" as="geometry" />
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-69" parent="1" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;labelBackgroundColor=none;fontSize=19;" value="&lt;span&gt;&lt;b style=&quot;forced-color-adjust: none; color: rgb(78, 121, 167); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;步骤⑥&lt;/b&gt;&lt;span style=&quot;color: rgb(78, 121, 167); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;：用户A修改标题并失焦提交&lt;/span&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(78, 121, 167); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(78, 121, 167); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;效果：A将标题改为“外滩夜景游览”，失焦触发提交&lt;/span&gt;&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="440" x="10" y="652" as="geometry" />
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-69" parent="1" style="text;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;labelBackgroundColor=none;fontSize=19;" value="&lt;span&gt;&lt;b style=&quot;forced-color-adjust: none; color: rgb(78, 121, 167); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;步骤8&lt;/b&gt;&lt;span style=&quot;color: rgb(78, 121, 167); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;：用户A修改标题并失焦提交&lt;/span&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(78, 121, 167); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(78, 121, 167); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;效果：A将标题改为“外滩夜景游览”，失焦触发提交&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="440" x="10" y="900" as="geometry" />
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-70" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#143642;" value="&lt;span style=&quot;color: rgb(255, 0, 0); font-size: 19px; white-space: nowrap;&quot;&gt;用户B前端效果：title字段显示&quot;张三正在编辑&quot;&lt;/span&gt;" vertex="1">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-70" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#6600CC;" value="&lt;span style=&quot;font-size: 19px; white-space: nowrap;&quot;&gt;用户B前端效果：title字段显示&quot;张三正在编辑&quot;&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="60" x="1880" y="555" as="geometry" />
         </mxCell>
         <mxCell id="N_N09CNsm19de4xMWc-F-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#6600CC;" value="&lt;span style=&quot;font-size: 19px; white-space: nowrap;&quot;&gt;用户B前端效果：在下一个字段旁显示“A的光标”彩色标记&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="60" x="1880" y="1550" as="geometry" />
+          <mxGeometry height="30" width="60" x="1880" y="750" as="geometry" />
         </mxCell>
         <mxCell id="N_N09CNsm19de4xMWc-F-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#143642;" value="&lt;span style=&quot;color: rgb(102, 0, 204); font-size: 19px; white-space: nowrap;&quot;&gt;用户B前端效果：title字段局部更新为“外滩夜景游”&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="60" x="1899" y="1250" as="geometry" />
+          <mxGeometry height="30" width="60" x="1899" y="1498" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
