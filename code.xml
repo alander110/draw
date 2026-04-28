@@ -364,79 +364,79 @@
         <mxCell id="kYNHzLGXDEgpCWb9Tzq3-50" parent="1" style="shape=rect;html=1;fillColor=none;strokeColor=#B07AA1;strokeWidth=1;dashed=1;dashPattern=8 8;whiteSpace=wrap;fontSize=12;" value="" vertex="1">
           <mxGeometry height="1550" width="2" x="1959" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-52" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#FF0000;strokeWidth=2;fontColor=#FF0000;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤②&lt;/b&gt;：ACTIVITY_LOCK (code=1011)&#xa;{itineraryId: 42, activityId: 128, field: &quot;title&quot;}&#xa;协议：WebSocket二进制帧">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-52" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#3399FF;strokeWidth=2;fontColor=#3399FF;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤②&lt;/b&gt;：ACTIVITY_LOCK (code=1011)&#xa;{itineraryId: 42, activityId: 128, field: &quot;title&quot;}&#xa;协议：WebSocket二进制帧">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="180" y="300" as="sourcePoint" />
             <mxPoint x="600" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-53" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤③&lt;/b&gt;：tryLock(&quot;42:128:title&quot;, userId=A, userName=&quot;张三&quot;)&#xa;返回：加锁成功（锁当前空闲）">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-53" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#006600;" value="&lt;b&gt;步骤③&lt;/b&gt;：tryLock(&quot;42:128:title&quot;, userId=A, userName=&quot;张三&quot;)&#xa;返回：加锁成功（锁当前空闲）">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="400" as="sourcePoint" />
             <mxPoint x="950" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-54" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;strokeColor=#4E79A7;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤④&lt;/b&gt;：锁获取成功响应&#xa;{success: true, lockKey: &quot;42:128:title&quot;}">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-54" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;strokeColor=#3399FF;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#3399FF;" value="&lt;b&gt;步骤④&lt;/b&gt;：锁获取成功响应&#xa;{success: true, lockKey: &quot;42:128:title&quot;}">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="500" as="sourcePoint" />
             <mxPoint x="180" y="500" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-55" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#FF0000;strokeWidth=2;fontColor=#FF0000;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑤&lt;/b&gt;：广播 ACTIVITY_LOCK (code=1011)&lt;br&gt;{activityId: 128, field: &quot;title&quot;, lockedBy: &quot;张三&quot;}">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-55" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#6600CC;strokeWidth=2;fontColor=#6600CC;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑤&lt;/b&gt;：广播 ACTIVITY_LOCK (code=1011)&lt;br&gt;{activityId: 128, field: &quot;title&quot;, lockedBy: &quot;张三&quot;}">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="600" as="sourcePoint" />
             <mxPoint x="1960" y="600" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-57" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#4E79A7;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑦&lt;/b&gt;：ACTIVITY_EDIT (code=1013)&#xa;{itineraryId: 42, detailId: 128, field: &quot;title&quot;, value: &quot;外滩夜景游览&quot;}">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-57" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#3399FF;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#3399FF;" value="&lt;b&gt;步骤⑦&lt;/b&gt;：ACTIVITY_EDIT (code=1013)&#xa;{itineraryId: 42, detailId: 128, field: &quot;title&quot;, value: &quot;外滩夜景游览&quot;}">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="180" y="800" as="sourcePoint" />
             <mxPoint x="600" y="800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-58" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑧&lt;/b&gt;：checkLock(&quot;42:128:title&quot;, userId=A)&#xa;返回：验证通过（A是锁持有者）">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-58" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#006600;" value="&lt;b&gt;步骤⑧&lt;/b&gt;：checkLock(&quot;42:128:title&quot;, userId=A)&#xa;返回：验证通过（A是锁持有者）">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="900" as="sourcePoint" />
             <mxPoint x="950" y="900" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-59" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=3;fontStyle=1;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑨&lt;/b&gt;：Feign调用 ItineraryRemoteService.updateDetail(42, 128, &quot;title&quot;, &quot;外滩夜景游览&quot;)&#xa;OpenFeign + Same-Token鉴权">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-59" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=3;fontStyle=1;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#006600;" value="&lt;b&gt;步骤⑨&lt;/b&gt;：Feign调用 ItineraryRemoteService.updateDetail(42, 128, &quot;title&quot;, &quot;外滩夜景游览&quot;)&#xa;OpenFeign + Same-Token鉴权">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="1000" as="sourcePoint" />
             <mxPoint x="1299" y="1000" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-60" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#F28E2B;strokeWidth=3;fontStyle=1;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑩&lt;/b&gt;：UPDATE itinerary_detail SET title=&#39;外滩夜景游览&#39; WHERE id=128&#xa;返回：更新成功（1 row affected）">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-60" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#F28E2B;strokeWidth=3;fontStyle=1;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#F28E2B;" value="&lt;b&gt;步骤⑩&lt;/b&gt;：UPDATE itinerary_detail SET title=&#39;外滩夜景游览&#39; WHERE id=128&#xa;返回：更新成功（1 row affected）">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1300" y="1100" as="sourcePoint" />
             <mxPoint x="1610" y="1100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-61" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;strokeColor=#F28E2B;strokeWidth=3;fontStyle=1;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑪&lt;/b&gt;：持久化成功响应">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-61" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;strokeColor=#F28E2B;strokeWidth=3;fontStyle=1;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#F28E2B;" value="&lt;b&gt;步骤⑪&lt;/b&gt;：持久化成功响应">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1610" y="1200" as="sourcePoint" />
             <mxPoint x="1300" y="1200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-62" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#00FF00;strokeWidth=2;fontColor=#000000;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑫&lt;/b&gt;：广播 ACTIVITY_EDIT (code=1013)&#xa;{activityId: 128, field: &quot;title&quot;, value: &quot;外滩夜景游览&quot;, editedBy: &quot;张三&quot;}&#xa;用户B前端效果：title字段局部更新为“外滩夜景游览”，React setState → 虚拟DOM diff → 仅重渲染变更条目">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-62" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#B07AA1;strokeWidth=2;fontColor=#6600CC;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑫&lt;/b&gt;：广播 ACTIVITY_EDIT (code=1013)&lt;br&gt;{activityId: 128, field: &quot;title&quot;, value: &quot;外滩夜景游览&quot;, editedBy: &quot;张三&quot;}">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="1300" as="sourcePoint" />
             <mxPoint x="1960" y="1300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-63" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#00FF00;strokeWidth=2;fontColor=#000000;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑬&lt;/b&gt;：广播 ACTIVITY_UNLOCK (code=1012)&#xa;{activityId: 128, field: &quot;title&quot;}&#xa;用户B前端效果：title字段恢复可编辑状态（蓝色边框）">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-63" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#6600CC;strokeWidth=2;fontColor=#6600CC;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑬&lt;/b&gt;：广播 ACTIVITY_UNLOCK (code=1012)&lt;br&gt;{activityId: 128, field: &quot;title&quot;}">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="1400" as="sourcePoint" />
             <mxPoint x="1960" y="1400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-64" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#4E79A7;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑭&lt;/b&gt;：ACTIVITY_CURSOR (code=1014)&#xa;{itineraryId: 42, detailId: 129, field: &quot;startTime&quot;}">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-64" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#3399FF;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#3399FF;" value="&lt;b&gt;步骤⑭&lt;/b&gt;：ACTIVITY_CURSOR (code=1014)&#xa;{itineraryId: 42, detailId: 129, field: &quot;startTime&quot;}">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="180" y="1500" as="sourcePoint" />
             <mxPoint x="600" y="1500" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-65" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#00FF00;strokeWidth=2;fontColor=#000000;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑭&lt;/b&gt;：广播 ACTIVITY_CURSOR (code=1014)&lt;br&gt;{itineraryId: 42, detailId: 129, field: &quot;startTime&quot;}">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-65" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#6600CC;strokeWidth=2;fontColor=#6600CC;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤⑭&lt;/b&gt;：广播 ACTIVITY_CURSOR (code=1014)&lt;br&gt;{itineraryId: 42, detailId: 129, field: &quot;startTime&quot;}">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="1600" as="sourcePoint" />
             <mxPoint x="1960" y="1600" as="targetPoint" />
@@ -451,8 +451,11 @@
         <mxCell id="kYNHzLGXDEgpCWb9Tzq3-70" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#143642;" value="&lt;span style=&quot;color: rgb(255, 0, 0); font-size: 19px; white-space: nowrap;&quot;&gt;用户B前端效果：title字段显示&quot;张三正在编辑&quot;&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="60" x="1880" y="555" as="geometry" />
         </mxCell>
-        <mxCell id="N_N09CNsm19de4xMWc-F-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#143642;" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 19px; white-space: nowrap;&quot;&gt;用户B前端效果：在下一个字段旁显示“A的光标”彩色标记&lt;/span&gt;" vertex="1">
+        <mxCell id="N_N09CNsm19de4xMWc-F-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#6600CC;" value="&lt;span style=&quot;font-size: 19px; white-space: nowrap;&quot;&gt;用户B前端效果：在下一个字段旁显示“A的光标”彩色标记&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="60" x="1880" y="1550" as="geometry" />
+        </mxCell>
+        <mxCell id="N_N09CNsm19de4xMWc-F-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#143642;" value="&lt;span style=&quot;color: rgb(102, 0, 204); font-size: 19px; white-space: nowrap;&quot;&gt;用户B前端效果：title字段局部更新为“外滩夜景游”&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="1899" y="1250" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
