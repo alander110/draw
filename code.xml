@@ -602,30 +602,18 @@
     </mxGraphModel>
   </diagram>
   <diagram id="z9kiS6xJeMkPwNpaJi2U" name="第 5 页">
-    <mxGraphModel dx="2289" dy="1384" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1585" dy="958" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;" value="" vertex="1">
-          <mxGeometry height="1000" width="1400" as="geometry" />
-        </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4E79A7;strokeColor=#4E79A7;fontSize=14;shadow=1;" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;业务数据层&lt;/b&gt;&lt;/font&gt;" vertex="1">
-          <mxGeometry height="40" width="320" x="50" y="80" as="geometry" />
-        </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4E79A7;strokeWidth=2;align=left;verticalAlign=top;fontSize=12;fontColor=#333333;shadow=1;" value="&lt;b&gt;nexusgo-itinerary&lt;/b&gt;&lt;br&gt;───────────────&lt;br&gt;• 行程/活动数据CRUD&lt;br&gt;• 协作关系持久化&lt;br&gt;  (itinerary_collaborator表)&lt;br&gt;• 协作邀请流程管理&lt;br&gt;• 编辑内容持久化" vertex="1">
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4E79A7;strokeWidth=2;align=left;verticalAlign=top;fontSize=19;fontColor=#333333;shadow=1;" value="" vertex="1">
           <mxGeometry height="240" width="320" x="50" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#59A14F;strokeColor=#59A14F;fontSize=14;shadow=1;" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;实时通道层&lt;/b&gt;&lt;/font&gt;" vertex="1">
-          <mxGeometry height="40" width="320" x="1030" y="80" as="geometry" />
-        </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#59A14F;strokeWidth=2;align=left;verticalAlign=top;fontSize=12;fontColor=#333333;shadow=1;" value="&lt;b&gt;nexusgo-im&lt;/b&gt;&lt;br&gt;───────────────&lt;br&gt;• 协作者会话管理&lt;br&gt;  (ItinerarySessionManager)&lt;br&gt;• 字段级编辑锁管理&lt;br&gt;  (ItineraryLockManager)&lt;br&gt;• 编辑内容实时广播&lt;br&gt;  (ItineraryCollaborationHandler)&lt;br&gt;• 编辑结果Feign回写行程服务" vertex="1">
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#59A14F;strokeWidth=2;align=left;verticalAlign=top;fontSize=12;fontColor=#333333;shadow=1;" value="" vertex="1">
           <mxGeometry height="240" width="320" x="1030" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F28E2B;strokeColor=#F28E2B;fontSize=14;shadow=1;" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;交互表现层&lt;/b&gt;&lt;/font&gt;" vertex="1">
-          <mxGeometry height="40" width="400" x="500" y="720" as="geometry" />
-        </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#F28E2B;strokeWidth=2;align=left;verticalAlign=top;fontSize=12;fontColor=#333333;shadow=1;" value="&lt;b&gt;React Web / React Native&lt;/b&gt;&lt;br&gt;───────────────&lt;br&gt;• 发起协作邀请&lt;br&gt;• 展示协作状态&lt;br&gt;  (在线协作者头像、编辑光标位置)&lt;br&gt;• 通过WebSocket请求编辑锁&lt;br&gt;• 接收广播并局部更新React状态" vertex="1">
-          <mxGeometry height="160" width="400" x="500" y="760" as="geometry" />
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#F28E2B;strokeWidth=2;align=left;verticalAlign=top;fontSize=12;fontColor=#333333;shadow=1;" value="" vertex="1">
+          <mxGeometry height="240" width="400" x="500" y="580" as="geometry" />
         </mxCell>
         <mxCell id="oNo2DXC-Z4OycdB1wpYb-8" edge="1" parent="1" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#666666;strokeWidth=2;" value="">
           <mxGeometry relative="1" as="geometry">
@@ -633,8 +621,8 @@
             <mxPoint x="1030" y="180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-9" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#333333;fillColor=none;strokeColor=none;" value="OpenFeign (同步RPC)：创建群组 / 通知推送 / 查询在线状态" vertex="1">
-          <mxGeometry height="30" width="240" x="580" y="165" as="geometry" />
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-9" parent="1" style="text;html=1;align=center;verticalAlign=top;fontSize=18;fontColor=default;fillColor=none;strokeColor=none;fontStyle=1" value="OpenFeign (同步RPC)：创建群组 / 通知推送 / 查询在线状态" vertex="1">
+          <mxGeometry height="30" width="240" x="580" y="150" as="geometry" />
         </mxCell>
         <mxCell id="oNo2DXC-Z4OycdB1wpYb-10" edge="1" parent="1" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#666666;strokeWidth=2;dashed=1;" value="">
           <mxGeometry relative="1" as="geometry">
@@ -642,58 +630,68 @@
             <mxPoint x="1030" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-11" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#333333;fillColor=none;strokeColor=none;" value="RocketMQ (异步通知)：协作邀请通知 / 状态变更通知" vertex="1">
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-11" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontColor=#333333;fillColor=none;strokeColor=none;fontStyle=1" value="RocketMQ (异步通知)：协作邀请通知 / 状态变更通知" vertex="1">
           <mxGeometry height="30" width="240" x="580" y="245" as="geometry" />
         </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-12" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;strokeColor=#59A14F;strokeWidth=2;" value="">
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-12" edge="1" parent="1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;strokeColor=#59A14F;strokeWidth=2;entryX=1;entryY=0;entryDx=0;entryDy=0;" target="eNYjY_Ad1v-l1eXLzpXt-3" value="">
           <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1190" y="540" />
-              <mxPoint x="900" y="540" />
-            </Array>
             <mxPoint x="1190" y="360" as="sourcePoint" />
             <mxPoint x="900" y="720" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-13" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#CCCCCC;rounded=1;" value="&lt;b&gt;WebSocket / TCP 双协议 (实时双向)&lt;/b&gt;&lt;br&gt;消息类型：code=1011~1018 (8种协作消息)&lt;br&gt;&lt;font style=&quot;font-size:10px;&quot;&gt;毫秒级广播延迟&lt;/font&gt;" vertex="1">
-          <mxGeometry height="60" width="180" x="1070" y="430" as="geometry" />
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-13" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#CCCCCC;rounded=1;" value="&lt;b&gt;WebSocket / TCP 双协议 (实时双向)&lt;/b&gt;&lt;br&gt;消息类型：code=1011~1018 (8种协作消息)&lt;br&gt;&lt;font&gt;毫秒级广播延迟&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="440" x="910" y="450" as="geometry" />
         </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-14" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;strokeColor=#F28E2B;strokeWidth=2;" value="">
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-14" edge="1" parent="1" source="eNYjY_Ad1v-l1eXLzpXt-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;strokeColor=#F28E2B;strokeWidth=2;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="oNo2DXC-Z4OycdB1wpYb-3" value="">
           <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="460" y="540" />
-              <mxPoint x="370" y="540" />
-            </Array>
             <mxPoint x="500" y="800" as="sourcePoint" />
             <mxPoint x="370" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-15" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#CCCCCC;rounded=1;" value="&lt;b&gt;HTTP REST (页面加载 + 数据提交)&lt;/b&gt;&lt;br&gt;协作邀请API / 行程CRUD API / AI规划API" vertex="1">
-          <mxGeometry height="50" width="180" x="150" y="430" as="geometry" />
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-15" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#CCCCCC;rounded=1;" value="&lt;b&gt;HTTP REST (页面加载 + 数据提交)&lt;/b&gt;&lt;br&gt;协作邀请API / 行程CRUD API / AI规划API" vertex="1">
+          <mxGeometry height="50" width="360" x="90" y="470" as="geometry" />
         </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F8FA;strokeColor=#333333;strokeWidth=2;align=center;verticalAlign=middle;fontSize=14;shadow=1;" value="&lt;b&gt;&lt;font color=&quot;#4E79A7&quot;&gt;协作编辑闭环&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;编辑 → 锁验证 → 持久化 → 广播 → 局部渲染&lt;/font&gt;" vertex="1">
-          <mxGeometry height="80" width="320" x="540" y="460" as="geometry" />
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F8FA;strokeColor=#333333;strokeWidth=2;align=center;verticalAlign=middle;fontSize=18;shadow=1;" value="&lt;b&gt;&lt;font color=&quot;#4E79A7&quot;&gt;协作编辑闭环&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font&gt;编辑 → 锁验证 → 持久化 → 广播 → 局部渲染&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="400" x="500" y="360" as="geometry" />
         </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;shadow=1;" value="" vertex="1">
-          <mxGeometry height="80" width="220" x="40" y="800" as="geometry" />
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;shadow=1;fontSize=18;" value="" vertex="1">
+          <mxGeometry height="80" width="270" x="70" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-18" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#666666;strokeWidth=2;" value="">
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-18" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#666666;strokeWidth=2;fontSize=18;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="60" y="830" as="sourcePoint" />
-            <mxPoint x="130" y="830" as="targetPoint" />
+            <mxPoint x="90" y="620" as="sourcePoint" />
+            <mxPoint x="160" y="620" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-19" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#333333;fillColor=none;strokeColor=none;" value="实线：同步通信" vertex="1">
-          <mxGeometry height="20" width="100" x="140" y="820" as="geometry" />
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-19" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontColor=#333333;fillColor=none;strokeColor=none;" value="实线：同步通信" vertex="1">
+          <mxGeometry height="20" width="100" x="170" y="610" as="geometry" />
         </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-20" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#666666;strokeWidth=2;dashed=1;" value="">
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-20" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#666666;strokeWidth=2;dashed=1;fontSize=18;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="60" y="860" as="sourcePoint" />
-            <mxPoint x="130" y="860" as="targetPoint" />
+            <mxPoint x="90" y="650" as="sourcePoint" />
+            <mxPoint x="160" y="650" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="oNo2DXC-Z4OycdB1wpYb-21" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#333333;fillColor=none;strokeColor=none;" value="虚线：异步通信" vertex="1">
-          <mxGeometry height="20" width="100" x="140" y="850" as="geometry" />
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-21" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontColor=#333333;fillColor=none;strokeColor=none;" value="虚线：异步通信" vertex="1">
+          <mxGeometry height="20" width="100" x="170" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="eNYjY_Ad1v-l1eXLzpXt-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#143642;" value="&lt;b style=&quot;color: rgb(51, 51, 51); font-size: 19px; text-align: left;&quot;&gt;nexusgo-itinerary&lt;/b&gt;&lt;br style=&quot;color: rgb(51, 51, 51); font-size: 19px; text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-size: 19px; text-align: left;&quot;&gt;───────────────&lt;/span&gt;&lt;br style=&quot;color: rgb(51, 51, 51); font-size: 19px; text-align: left;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-size: 19px; background-color: transparent;&quot;&gt;行程/活动数据CRUD&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-size: 19px; background-color: transparent;&quot;&gt;协作关系持久化&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-size: 19px; background-color: transparent;&quot;&gt;协作邀请流程管理&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-size: 19px; background-color: transparent;&quot;&gt;编辑内容持久化&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="320" x="50" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="eNYjY_Ad1v-l1eXLzpXt-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#143642;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b style=&quot;color: rgb(51, 51, 51); text-align: left;&quot;&gt;nexusgo-im&lt;/b&gt;&lt;br style=&quot;color: rgb(51, 51, 51); text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(51, 51, 51); text-align: left;&quot;&gt;───────────────&lt;/span&gt;&lt;br style=&quot;color: rgb(51, 51, 51); text-align: left;&quot;&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193));&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;协作者会话管理&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193));&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;字段级编辑锁管理&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193));&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;编辑内容实时广播&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193));&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;编辑结果Feign回写行程服务&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="320" x="1030" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="eNYjY_Ad1v-l1eXLzpXt-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#143642;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b style=&quot;color: rgb(51, 51, 51); text-align: left;&quot;&gt;React Web / React Native&lt;/b&gt;&lt;br style=&quot;color: rgb(51, 51, 51); text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(51, 51, 51); text-align: left;&quot;&gt;───────────────&lt;/span&gt;&lt;br style=&quot;color: rgb(51, 51, 51); text-align: left;&quot;&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(51, 51, 51); background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;发起协作邀请&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;展示协作状态&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;(在线协作者头像、编辑光标位置)&lt;/span&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;通过WebSocket请求编辑锁&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;接收广播并局部更新React状态&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="400" x="500" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4E79A7;strokeColor=#4E79A7;fontSize=14;shadow=1;" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;业务数据层&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="320" x="50" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#59A14F;strokeColor=#59A14F;fontSize=14;shadow=1;" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;实时通道层&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="320" x="1030" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F28E2B;strokeColor=#F28E2B;fontSize=14;shadow=1;" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;交互表现层&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="400" x="500" y="580" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
