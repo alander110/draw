@@ -820,8 +820,13 @@
         <mxCell id="eUGwW7DA47dC0xOrf0Xu-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;opacity=50;fontSize=12;fontStyle=1" value="① 用户触发&#xa;用户点击&#39;GitHub登录&#39;按钮" vertex="1">
           <mxGeometry height="80" width="240" x="294" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="GxZy1B7PG1bG5SPwWitc-8" edge="1" parent="1" source="eUGwW7DA47dC0xOrf0Xu-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;fontSize=12;fontStyle=1" target="eUGwW7DA47dC0xOrf0Xu-3">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="GxZy1B7PG1bG5SPwWitc-28" edge="1" parent="1" source="eUGwW7DA47dC0xOrf0Xu-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="eUGwW7DA47dC0xOrf0Xu-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="250" />
+              <mxPoint x="414" y="250" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="eUGwW7DA47dC0xOrf0Xu-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F28E2B;strokeColor=#000000;opacity=50;fontSize=12;fontStyle=1" value="② 前端重定向&#xa;GET https://github.com/login/oauth/authorize?client_id=xxx&amp;amp;redirect_uri=xxx" vertex="1">
           <mxGeometry height="80" width="240" x="610" y="150" as="geometry" />
@@ -829,14 +834,14 @@
         <mxCell id="GxZy1B7PG1bG5SPwWitc-11" edge="1" parent="1" source="eUGwW7DA47dC0xOrf0Xu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;fontStyle=1" target="eUGwW7DA47dC0xOrf0Xu-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eUGwW7DA47dC0xOrf0Xu-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BAB0AC;strokeColor=#000000;opacity=50;fontSize=12;fontStyle=1" value="③ GitHub展示授权页面&#xa;用户确认授权" vertex="1">
-          <mxGeometry height="80" width="240" x="940" y="210" as="geometry" />
+        <mxCell id="eUGwW7DA47dC0xOrf0Xu-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#647687;strokeColor=#314354;opacity=50;fontSize=12;fontStyle=1;fontColor=#ffffff;" value="③ GitHub展示授权页面&#xa;用户确认授权" vertex="1">
+          <mxGeometry height="80" width="240" x="294" y="270" as="geometry" />
         </mxCell>
         <mxCell id="GxZy1B7PG1bG5SPwWitc-16" edge="1" parent="1" source="eUGwW7DA47dC0xOrf0Xu-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;fontStyle=1" target="eUGwW7DA47dC0xOrf0Xu-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="eUGwW7DA47dC0xOrf0Xu-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4E79A7;strokeColor=#000000;opacity=50;fontSize=12;fontStyle=1" value="④ GitHub回调&#xa;GET /api/auth/oauth2/github/callback?code=xxx" vertex="1">
-          <mxGeometry height="80" width="240" x="940" y="320" as="geometry" />
+          <mxGeometry height="80" width="240" x="940" y="330" as="geometry" />
         </mxCell>
         <mxCell id="GxZy1B7PG1bG5SPwWitc-17" edge="1" parent="1" source="eUGwW7DA47dC0xOrf0Xu-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;fontStyle=1" target="eUGwW7DA47dC0xOrf0Xu-6">
           <mxGeometry relative="1" as="geometry" />
