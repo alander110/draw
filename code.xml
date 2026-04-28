@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="MiMo" pages="3">
+<mxfile host="app.diagrams.net" agent="MiMo" pages="5">
   <diagram id="EedJ2Wv5AZxeqb4GBmUh" name="架构图">
     <mxGraphModel dx="1471" dy="890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -465,6 +465,235 @@
         </mxCell>
         <mxCell id="N_N09CNsm19de4xMWc-F-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#143642;" value="&lt;span style=&quot;color: rgb(102, 0, 204); font-size: 19px; white-space: nowrap;&quot;&gt;用户B前端效果：title字段局部更新为“外滩夜景游”&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="60" x="1899" y="1498" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="UsdoKTQ0V14jqSe0snrj" name="第 4 页">
+    <mxGraphModel dx="2060" dy="1246" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UqPpoZe3A_moH44ESmDB-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;fontColor=#143642;fillColor=none;dashed=1;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="270" width="970" x="192" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#190033;fontColor=#143642;fillColor=none;dashed=1;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="600" width="300" x="745" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;fontColor=#143642;fillColor=none;dashed=1;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="600" width="300" x="250" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-1" parent="1" style="rounded=1;fillColor=#1D3557;fontColor=#ffffff;" value="Netty Server (端口9200)&#xa;客户端连接进入" vertex="1">
+          <mxGeometry height="70" width="260" x="500" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-2" parent="1" style="rounded=1;fillColor=#1D3557;fontColor=#ffffff;" value="ProtocolDetectionHandler&#xa;读取前2字节判断0xCAFE" vertex="1">
+          <mxGeometry height="80" width="260" x="500" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-3" parent="1" style="rounded=1;fillColor=#d0cee2;strokeColor=#56517e;" value="IdleStateHandler&#xa;(空闲检测)" vertex="1">
+          <mxGeometry height="70" width="260" x="270" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-4" parent="1" style="rounded=1;fillColor=#bac8d3;strokeWidth=3;strokeColor=#23445d;" value="ImMessageDecoder&#xa;(消息解码器)" vertex="1">
+          <mxGeometry height="80" width="260" x="270" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-5" parent="1" style="rounded=1;fillColor=#bac8d3;strokeWidth=3;strokeColor=#23445d;" value="ImMessageEncoder&#xa;(消息编码器)" vertex="1">
+          <mxGeometry height="80" width="260" x="270" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-6" parent="1" style="rounded=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="HttpServerCodec" vertex="1">
+          <mxGeometry height="60" width="260" x="763.5" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-7" parent="1" style="rounded=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="HttpObjectAggregator" vertex="1">
+          <mxGeometry height="60" width="260" x="763.5" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-8" parent="1" style="rounded=1;fillColor=#b0e3e6;strokeColor=#0e8088;" value="WebSocketServerProtocolHandler" vertex="1">
+          <mxGeometry height="70" width="260" x="763.5" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-9" parent="1" style="rounded=1;fillColor=#b0e3e6;strokeColor=#0e8088;" value="WebSocketHandshakeCompleteHandler" vertex="1">
+          <mxGeometry height="70" width="260" x="763.5" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-10" parent="1" style="rounded=1;fillColor=#b0e3e6;strokeColor=#0e8088;" value="WebSocketFrameHandler" vertex="1">
+          <mxGeometry height="70" width="260" x="763.5" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-11" parent="1" style="rounded=1;fillColor=#FFE599;fontSize=13;labelBackgroundColor=none;gradientColor=none;fillStyle=auto;" value="HeartbeatHandler&#xa;" vertex="1">
+          <mxGeometry height="150" width="110" x="212" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-12" parent="1" style="rounded=1;fillColor=#FFE599;" value="AckMessageHandler&#xa;" vertex="1">
+          <mxGeometry height="150" width="110" x="336" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="UqPpoZe3A_moH44ESmDB-12" edge="1" parent="1" source="WX9Ey0wb1zaA_Xqqdd7e-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#000000;fontColor=#143642;fillColor=#FFE599;" target="UqPpoZe3A_moH44ESmDB-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-13" parent="1" style="rounded=1;fillColor=#FFE599;" value="ImLoginHandler" vertex="1">
+          <mxGeometry height="150" width="100" x="462" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-14" edge="1" parent="1" source="WX9Ey0wb1zaA_Xqqdd7e-1" style="endArrow=block;strokeWidth=2;" target="WX9Ey0wb1zaA_Xqqdd7e-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-15" edge="1" parent="1" source="WX9Ey0wb1zaA_Xqqdd7e-2" style="endArrow=block;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="WX9Ey0wb1zaA_Xqqdd7e-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-16" edge="1" parent="1" source="WX9Ey0wb1zaA_Xqqdd7e-2" style="endArrow=block;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="WX9Ey0wb1zaA_Xqqdd7e-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-17" edge="1" parent="1" source="WX9Ey0wb1zaA_Xqqdd7e-3" style="endArrow=block;" target="WX9Ey0wb1zaA_Xqqdd7e-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-18" edge="1" parent="1" source="WX9Ey0wb1zaA_Xqqdd7e-4" style="endArrow=block;" target="WX9Ey0wb1zaA_Xqqdd7e-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-19" edge="1" parent="1" source="WX9Ey0wb1zaA_Xqqdd7e-6" style="endArrow=block;" target="WX9Ey0wb1zaA_Xqqdd7e-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-20" edge="1" parent="1" source="WX9Ey0wb1zaA_Xqqdd7e-7" style="endArrow=block;" target="WX9Ey0wb1zaA_Xqqdd7e-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-21" edge="1" parent="1" source="WX9Ey0wb1zaA_Xqqdd7e-8" style="endArrow=block;" target="WX9Ey0wb1zaA_Xqqdd7e-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-22" edge="1" parent="1" source="WX9Ey0wb1zaA_Xqqdd7e-9" style="endArrow=block;" target="WX9Ey0wb1zaA_Xqqdd7e-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-23" edge="1" parent="1" source="WX9Ey0wb1zaA_Xqqdd7e-29" style="endArrow=block;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.379;entryY=0.03;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;" target="UqPpoZe3A_moH44ESmDB-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="1070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-24" edge="1" parent="1" source="WX9Ey0wb1zaA_Xqqdd7e-30" style="endArrow=block;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.597;entryY=0.047;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;" target="UqPpoZe3A_moH44ESmDB-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-25" edge="1" parent="1" source="WX9Ey0wb1zaA_Xqqdd7e-11" style="endArrow=block;" target="WX9Ey0wb1zaA_Xqqdd7e-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WX9Ey0wb1zaA_Xqqdd7e-26" edge="1" parent="1" source="WX9Ey0wb1zaA_Xqqdd7e-12" style="endArrow=block;" target="WX9Ey0wb1zaA_Xqqdd7e-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UqPpoZe3A_moH44ESmDB-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=center;verticalAlign=middle;rounded=0;fontColor=#143642;gradientColor=none;" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;共享相同的业务处理链&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="347" x="480" y="1091" as="geometry" />
+        </mxCell>
+        <mxCell id="UqPpoZe3A_moH44ESmDB-13" edge="1" parent="1" source="UqPpoZe3A_moH44ESmDB-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontColor=#143642;fillColor=#FAE5C7;" target="UqPpoZe3A_moH44ESmDB-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UqPpoZe3A_moH44ESmDB-8" parent="1" style="rounded=1;fillColor=#FFE599;fontSize=13;" value="PrivateChatHanlder" vertex="1">
+          <mxGeometry height="150" width="125" x="577" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="UqPpoZe3A_moH44ESmDB-14" edge="1" parent="1" source="UqPpoZe3A_moH44ESmDB-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#000000;fontColor=#143642;fillColor=#FAE5C7;" target="UqPpoZe3A_moH44ESmDB-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UqPpoZe3A_moH44ESmDB-9" parent="1" style="rounded=1;fillColor=#FFE599;fontSize=13;fontFamily=Helvetica;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;" value="GroupRoomHanlder" vertex="1">
+          <mxGeometry height="150" width="120" x="712" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="UqPpoZe3A_moH44ESmDB-15" edge="1" parent="1" source="UqPpoZe3A_moH44ESmDB-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#000000;fontColor=#143642;fillColor=#FAE5C7;" target="UqPpoZe3A_moH44ESmDB-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UqPpoZe3A_moH44ESmDB-10" parent="1" style="rounded=1;fillColor=#FFE599;fontSize=13;whiteSpace=wrap;strokeColor=none;" value="OnelineStatusHanlder" vertex="1">
+          <mxGeometry height="150" width="127.5" x="844.5" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="UqPpoZe3A_moH44ESmDB-11" parent="1" style="rounded=1;fillColor=#FFE599;fontSize=13;whiteSpace=wrap;" value="ItineraryCollaborationHandler" vertex="1">
+          <mxGeometry height="150" width="170" x="987" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="UqPpoZe3A_moH44ESmDB-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#007FFF;fontSize=18;" value="是 -&amp;gt; TCP自定义协议" vertex="1">
+          <mxGeometry height="30" width="190" x="296" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="UqPpoZe3A_moH44ESmDB-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#007FFF;fontSize=18;" value="否 -&amp;gt; Websorcket自定义协议" vertex="1">
+          <mxGeometry height="30" width="248" x="782" y="240" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="z9kiS6xJeMkPwNpaJi2U" name="第 5 页">
+    <mxGraphModel dx="2289" dy="1384" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1000" width="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4E79A7;strokeColor=#4E79A7;fontSize=14;shadow=1;" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;业务数据层&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="320" x="50" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4E79A7;strokeWidth=2;align=left;verticalAlign=top;fontSize=12;fontColor=#333333;shadow=1;" value="&lt;b&gt;nexusgo-itinerary&lt;/b&gt;&lt;br&gt;───────────────&lt;br&gt;• 行程/活动数据CRUD&lt;br&gt;• 协作关系持久化&lt;br&gt;  (itinerary_collaborator表)&lt;br&gt;• 协作邀请流程管理&lt;br&gt;• 编辑内容持久化" vertex="1">
+          <mxGeometry height="240" width="320" x="50" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#59A14F;strokeColor=#59A14F;fontSize=14;shadow=1;" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;实时通道层&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="320" x="1030" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#59A14F;strokeWidth=2;align=left;verticalAlign=top;fontSize=12;fontColor=#333333;shadow=1;" value="&lt;b&gt;nexusgo-im&lt;/b&gt;&lt;br&gt;───────────────&lt;br&gt;• 协作者会话管理&lt;br&gt;  (ItinerarySessionManager)&lt;br&gt;• 字段级编辑锁管理&lt;br&gt;  (ItineraryLockManager)&lt;br&gt;• 编辑内容实时广播&lt;br&gt;  (ItineraryCollaborationHandler)&lt;br&gt;• 编辑结果Feign回写行程服务" vertex="1">
+          <mxGeometry height="240" width="320" x="1030" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F28E2B;strokeColor=#F28E2B;fontSize=14;shadow=1;" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;交互表现层&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="400" x="500" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#F28E2B;strokeWidth=2;align=left;verticalAlign=top;fontSize=12;fontColor=#333333;shadow=1;" value="&lt;b&gt;React Web / React Native&lt;/b&gt;&lt;br&gt;───────────────&lt;br&gt;• 发起协作邀请&lt;br&gt;• 展示协作状态&lt;br&gt;  (在线协作者头像、编辑光标位置)&lt;br&gt;• 通过WebSocket请求编辑锁&lt;br&gt;• 接收广播并局部更新React状态" vertex="1">
+          <mxGeometry height="160" width="400" x="500" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-8" edge="1" parent="1" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#666666;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="180" as="sourcePoint" />
+            <mxPoint x="1030" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-9" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#333333;fillColor=none;strokeColor=none;" value="OpenFeign (同步RPC)：创建群组 / 通知推送 / 查询在线状态" vertex="1">
+          <mxGeometry height="30" width="240" x="580" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-10" edge="1" parent="1" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#666666;strokeWidth=2;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="240" as="sourcePoint" />
+            <mxPoint x="1030" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-11" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#333333;fillColor=none;strokeColor=none;" value="RocketMQ (异步通知)：协作邀请通知 / 状态变更通知" vertex="1">
+          <mxGeometry height="30" width="240" x="580" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-12" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;strokeColor=#59A14F;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1190" y="540" />
+              <mxPoint x="900" y="540" />
+            </Array>
+            <mxPoint x="1190" y="360" as="sourcePoint" />
+            <mxPoint x="900" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-13" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#CCCCCC;rounded=1;" value="&lt;b&gt;WebSocket / TCP 双协议 (实时双向)&lt;/b&gt;&lt;br&gt;消息类型：code=1011~1018 (8种协作消息)&lt;br&gt;&lt;font style=&quot;font-size:10px;&quot;&gt;毫秒级广播延迟&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="180" x="1070" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-14" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;strokeColor=#F28E2B;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="540" />
+              <mxPoint x="370" y="540" />
+            </Array>
+            <mxPoint x="500" y="800" as="sourcePoint" />
+            <mxPoint x="370" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-15" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#CCCCCC;rounded=1;" value="&lt;b&gt;HTTP REST (页面加载 + 数据提交)&lt;/b&gt;&lt;br&gt;协作邀请API / 行程CRUD API / AI规划API" vertex="1">
+          <mxGeometry height="50" width="180" x="150" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F8FA;strokeColor=#333333;strokeWidth=2;align=center;verticalAlign=middle;fontSize=14;shadow=1;" value="&lt;b&gt;&lt;font color=&quot;#4E79A7&quot;&gt;协作编辑闭环&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;编辑 → 锁验证 → 持久化 → 广播 → 局部渲染&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="320" x="540" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;shadow=1;" value="" vertex="1">
+          <mxGeometry height="80" width="220" x="40" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-18" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#666666;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="60" y="830" as="sourcePoint" />
+            <mxPoint x="130" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-19" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#333333;fillColor=none;strokeColor=none;" value="实线：同步通信" vertex="1">
+          <mxGeometry height="20" width="100" x="140" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-20" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#666666;strokeWidth=2;dashed=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="60" y="860" as="sourcePoint" />
+            <mxPoint x="130" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oNo2DXC-Z4OycdB1wpYb-21" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#333333;fillColor=none;strokeColor=none;" value="虚线：异步通信" vertex="1">
+          <mxGeometry height="20" width="100" x="140" y="850" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
