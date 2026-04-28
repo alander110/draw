@@ -1,11 +1,20 @@
 <mxfile host="app.diagrams.net" agent="MiMo" pages="3">
   <diagram id="EedJ2Wv5AZxeqb4GBmUh" name="架构图">
-    <mxGraphModel dx="1030" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1471" dy="890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="_xGwUBy8bHHtJotOPfQr-1" parent="1" style="text;align=center;verticalAlign=middle;fontSize=14;strokeColor=none;fillColor=none;" value="客户端层&#xa; (Client Layer)" vertex="1">
           <mxGeometry height="30" width="100" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="l6InKSGDjyDYqPSPVUgc-2" edge="1" parent="1" source="_xGwUBy8bHHtJotOPfQr-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#A8201A;fontColor=#190033;fillColor=#FAE5C7;entryX=1;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;" target="_xGwUBy8bHHtJotOPfQr-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="45" />
+              <mxPoint x="800" y="282" />
+            </Array>
+            <mxPoint x="800" y="290" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="_xGwUBy8bHHtJotOPfQr-2" parent="1" style="dashed=1;strokeColor=#333333;fillColor=none;" vertex="1">
           <mxGeometry height="70" width="660" x="120" y="10" as="geometry" />
@@ -16,7 +25,7 @@
         <mxCell id="_xGwUBy8bHHtJotOPfQr-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#4E79A7;strokeColor=#333333;fontColor=#FFFFFF;align=center;" value="React 19&lt;br&gt;管理后台" vertex="1">
           <mxGeometry height="40" width="150" x="498" y="25" as="geometry" />
         </mxCell>
-        <mxCell id="_xGwUBy8bHHtJotOPfQr-5" parent="1" style="text;align=center;fontSize=12;strokeColor=none;fillColor=none;" value="HTTP / WebSocket / TCP" vertex="1">
+        <mxCell id="_xGwUBy8bHHtJotOPfQr-5" parent="1" style="text;align=center;fontSize=12;strokeColor=none;fillColor=none;" value="HTTP" vertex="1">
           <mxGeometry height="20" width="120" x="312" y="89" as="geometry" />
         </mxCell>
         <mxCell id="_xGwUBy8bHHtJotOPfQr-6" parent="1" style="text;align=center;verticalAlign=middle;fontSize=14;strokeColor=none;fillColor=none;" value="网关层 &#xa;(Gateway Layer)" vertex="1">
@@ -188,6 +197,9 @@
         </mxCell>
         <mxCell id="_xGwUBy8bHHtJotOPfQr-47" parent="1" style="text;align=center;fontSize=11;strokeColor=none;fillColor=none;" value="单向依赖：上层依赖下层，下层不感知上层" vertex="1">
           <mxGeometry height="20" width="220" x="466" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="l6InKSGDjyDYqPSPVUgc-3" parent="1" style="text;whiteSpace=wrap;html=1;fontColor=#143642;labelBackgroundColor=none;" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;WebSocket / TCP&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="725" y="89" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -361,7 +373,7 @@
         <mxCell id="kYNHzLGXDEgpCWb9Tzq3-50" parent="1" style="shape=rect;html=1;fillColor=none;strokeColor=#B07AA1;strokeWidth=1;dashed=1;dashPattern=8 8;whiteSpace=wrap;fontSize=12;" value="" vertex="1">
           <mxGeometry height="1550" width="2" x="1959" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-52" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#3399FF;strokeWidth=2;fontColor=#3399FF;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤2&lt;/b&gt;：ACTIVITY_LOCK (code=1011)&lt;br&gt;{itineraryId: 42, activityId: 128, field: &quot;title&quot;}&lt;br&gt;协议：WebSocket二进制帧">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-52" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#3399FF;strokeWidth=2;fontColor=#3399FF;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;labelBorderColor=default;" value="&lt;b&gt;步骤2&lt;/b&gt;：ACTIVITY_LOCK (code=1011)&lt;br&gt;{itineraryId: 42, activityId: 128, field: &quot;title&quot;}&lt;br&gt;协议：WebSocket二进制帧">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="180" y="300" as="sourcePoint" />
             <mxPoint x="600" y="300" as="targetPoint" />
