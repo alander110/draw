@@ -130,14 +130,11 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="yThCKtsgf5r57pLvZqIU" name="第 2 页">
-    <mxGraphModel dx="3433" dy="2077" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram id="yThCKtsgf5r57pLvZqIU" name="5-6：行程协作编辑完整时序图">
+    <mxGraphModel dx="896" dy="542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-38" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" value="&lt;b&gt;&lt;font&gt;图5-6：行程协作编辑完整时序图&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="800" x="650" y="10" as="geometry" />
-        </mxCell>
         <mxCell id="kYNHzLGXDEgpCWb9Tzq3-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4E79A7;strokeColor=#4E79A7;fontColor=#ffffff;align=center;fontSize=12;" value="&lt;b&gt;用户A前端&lt;/b&gt;&lt;br&gt;React Web" vertex="1">
           <mxGeometry height="60" width="100" x="130" y="71" as="geometry" />
         </mxCell>
