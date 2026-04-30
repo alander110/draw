@@ -359,16 +359,16 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="YqimYrdR9dQ6Tm1rxV-4-2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;dashed=1;strokeColor=#d6b656;align=left;verticalAlign=top;fontSize=50;strokeWidth=2;fontColor=#000000;" value="&lt;b&gt;独立层&lt;/b&gt;" vertex="1">
+        <mxCell id="YqimYrdR9dQ6Tm1rxV-4-2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=top;fontSize=50;strokeWidth=2;fontColor=#000000;" value="&lt;b&gt;独立层&lt;/b&gt;" vertex="1">
           <mxGeometry height="450" width="2240" x="100" y="719" as="geometry" />
         </mxCell>
-        <mxCell id="YqimYrdR9dQ6Tm1rxV-4-3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;dashed=1;strokeColor=#6c8ebf;align=left;verticalAlign=top;fontSize=50;strokeWidth=2;fontColor=#000000;" value="&lt;b&gt;应用层&lt;/b&gt;" vertex="1">
+        <mxCell id="YqimYrdR9dQ6Tm1rxV-4-3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;fontSize=50;strokeWidth=2;fontColor=#000000;" value="&lt;b&gt;应用层&lt;/b&gt;" vertex="1">
           <mxGeometry height="450" width="2800" x="100" y="1230" as="geometry" />
         </mxCell>
-        <mxCell id="YqimYrdR9dQ6Tm1rxV-4-4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;dashed=1;strokeColor=#9673a6;align=left;verticalAlign=top;fontSize=50;strokeWidth=2;fontColor=#000000;" value="&lt;b&gt;中间件层&lt;/b&gt;" vertex="1">
+        <mxCell id="YqimYrdR9dQ6Tm1rxV-4-4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;fontSize=50;strokeWidth=2;fontColor=#000000;" value="&lt;b&gt;中间件层&lt;/b&gt;" vertex="1">
           <mxGeometry height="450" width="2800" x="100" y="1770" as="geometry" />
         </mxCell>
-        <mxCell id="YqimYrdR9dQ6Tm1rxV-4-5" parent="1" style="whiteSpace=wrap;html=1;fillColor=#bac8d3;dashed=1;strokeColor=#23445d;align=left;verticalAlign=top;fontSize=50;strokeWidth=2;fontColor=#000000;" value="&lt;b&gt;基础层&lt;/b&gt;" vertex="1">
+        <mxCell id="YqimYrdR9dQ6Tm1rxV-4-5" parent="1" style="whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;align=left;verticalAlign=top;fontSize=50;strokeWidth=2;fontColor=#000000;" value="&lt;b&gt;基础层&lt;/b&gt;" vertex="1">
           <mxGeometry height="450" width="2800" x="105" y="2300" as="geometry" />
         </mxCell>
         <mxCell id="YqimYrdR9dQ6Tm1rxV-4-6" parent="1" style="whiteSpace=wrap;html=1;fillColor=#F28E2B;strokeColor=#B56313;shadow=1;fontColor=#000000;align=center;verticalAlign=top;overflow=hidden;fontSize=28;" value="&lt;b&gt;mq 模块&lt;/b&gt;&lt;br&gt;&lt;span&gt;───────────&lt;/span&gt;&lt;br&gt;RocketMQ 生产者/消费者基础配置" vertex="1">
