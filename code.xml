@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="MiMo" pages="7">
+<mxfile host="app.diagrams.net" agent="MiMo" pages="8">
   <diagram id="EedJ2Wv5AZxeqb4GBmUh" name="4-1：系统总体架构分层图">
     <mxGraphModel dx="1414" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -965,6 +965,156 @@
         </mxCell>
         <mxCell id="xVQdka87wn4_zDI4mxUz-96" edge="1" parent="1" source="22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.519;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;curved=0;strokeWidth=2;strokeColor=#004C99;" target="30">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="eaVEema1Jq3cSpCowVBt" name="4-2：微服务拆分与服务边界图">
+    <mxGraphModel dx="2491" dy="2043" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;fontColor=#000000;align=center;verticalAlign=top;fontSize=12;dashed=1;dashPattern=8 8;" value="" vertex="1">
+          <mxGeometry height="70" width="390" x="-460" y="-92" as="geometry" />
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" value="&lt;b&gt;图例说明&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="360" x="-460" y="-92" as="geometry" />
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-3" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;entryX=1;entryY=0.5;strokeWidth=2;fontColor=#000000;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-449" y="-42" as="sourcePoint" />
+            <mxPoint x="-379" y="-42" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#000000;" value="OpenFeign 同步调用" vertex="1">
+          <mxGeometry height="24" width="100" x="-372" y="-54" as="geometry" />
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-5" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=8 8;strokeWidth=2;fontColor=#000000;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-260" y="-42" as="sourcePoint" />
+            <mxPoint x="-190" y="-42" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-6" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#000000;" value="RocketMQ 异步消息" vertex="1">
+          <mxGeometry height="24" width="100" x="-180" y="-54" as="geometry" />
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;verticalAlign=top;strokeWidth=2;textOpacity=80;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;网关服务 (nexusgo-gateway)&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;数据库表：&lt;/b&gt;&lt;br&gt;无独立数据表&lt;br&gt;&lt;br&gt;&lt;b&gt;对外服务：&lt;/b&gt;&lt;br&gt;路由转发 / 认证鉴权&lt;br&gt;限流熔断 / CORS处理&lt;br&gt;&lt;br&gt;端口: 9000&lt;/font&gt;" vertex="1">
+          <mxGeometry height="200" width="280" x="-10" y="-170" as="geometry" />
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=top;strokeWidth=2;textOpacity=80;fontColor=#000000;" value="&lt;font style=&quot;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;行程服务 (nexusgo-itinerary)&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b style=&quot;&quot;&gt;数据库表：&lt;/b&gt;&lt;br&gt;itinerary, itinerary_detail,&lt;br&gt;itinerary_collaborator (3张表)&lt;br&gt;&lt;br&gt;&lt;b style=&quot;&quot;&gt;对外服务：&lt;/b&gt;&lt;br&gt;行程CRUD / AI规划&lt;br&gt;协作管理 / 预算跟踪&lt;br&gt;&lt;br&gt;端口: 9002&lt;/font&gt;" vertex="1">
+          <mxGeometry height="200" width="280" x="-460" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-24" edge="1" parent="1" source="gHWMmM7ofcgEgesKH2sl-10" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="gHWMmM7ofcgEgesKH2sl-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-26" connectable="0" parent="gHWMmM7ofcgEgesKH2sl-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 15px; background-color: rgb(169, 196, 235);&quot;&gt;同步调用: 获取用户信息&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0574" y="-5" as="geometry">
+            <mxPoint x="-36" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=top;strokeWidth=2;fontColor=#000000;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;社区服务 (nexusgo-post)&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;数据库表：&lt;/b&gt;&lt;br&gt;posts, post_comments,&lt;br&gt;post_likes (3张表)&lt;br&gt;&lt;br&gt;&lt;b&gt;对外服务：&lt;/b&gt;&lt;br&gt;帖子CRUD / 评论管理&lt;br&gt;点赞管理 / 内容审核&lt;br&gt;&lt;br&gt;端口: 9003&lt;/font&gt;" vertex="1">
+          <mxGeometry height="200" width="280" x="-10" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-27" edge="1" parent="1" source="gHWMmM7ofcgEgesKH2sl-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;strokeWidth=2;" target="gHWMmM7ofcgEgesKH2sl-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-28" connectable="0" parent="gHWMmM7ofcgEgesKH2sl-27" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 15px; background-color: rgb(169, 196, 235);&quot;&gt;同步调用: 获取用户信息&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1429" y="-1" as="geometry">
+            <mxPoint x="166" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=top;strokeWidth=2;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;即时通讯服务 (nexusgo-im)&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;数据库表：&lt;/b&gt;&lt;br&gt;im_single_message, im_group_message,&lt;br&gt;im_group_message_read, im_group,&lt;br&gt;im_group_member, im_notification_message&lt;br&gt;(6张表)&lt;br&gt;&lt;b&gt;对外服务：&lt;/b&gt;&lt;br&gt;消息收发 / 群组管理&lt;br&gt;在线状态 / 通知推送&lt;br&gt;协作实时同步&lt;br&gt;&lt;br&gt;端口: 9004(REST) / 9200(WS+TCP)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="200" width="280" x="440" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-29" edge="1" parent="1" source="gHWMmM7ofcgEgesKH2sl-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;strokeWidth=2;" target="gHWMmM7ofcgEgesKH2sl-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-30" connectable="0" parent="gHWMmM7ofcgEgesKH2sl-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 15px; background-color: rgb(169, 196, 235);&quot;&gt;同步调用: 获取用户信息&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.3646" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=top;strokeWidth=2;fontColor=#000000;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;搜索服务 (nexusgo-search)&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;数据库表：&lt;/b&gt;&lt;br&gt;city, poi, user_poi_favorites,&lt;br&gt;user_search_history (4张表)&lt;br&gt;&lt;br&gt;&lt;b&gt;对外服务：&lt;/b&gt;&lt;br&gt;POI搜索 / 附近搜索&lt;br&gt;城市信息 / 收藏管理&lt;br&gt;&lt;br&gt;端口: 9005&lt;/font&gt;" vertex="1">
+          <mxGeometry height="200" width="280" x="440" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-14" edge="1" parent="1" source="gHWMmM7ofcgEgesKH2sl-7" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;fontSize=15;fontColor=#000000;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="gHWMmM7ofcgEgesKH2sl-9" value="路由转发">
+          <mxGeometry height="100" relative="1" width="100" x="-0.7377" y="-2" as="geometry">
+            <mxPoint y="1" as="offset" />
+            <mxPoint x="400" y="159" as="sourcePoint" />
+            <mxPoint x="840" y="159" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-15" edge="1" parent="1" source="gHWMmM7ofcgEgesKH2sl-7" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;fontSize=15;fontColor=#000000;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="gHWMmM7ofcgEgesKH2sl-10" value="路由转发">
+          <mxGeometry height="100" relative="1" width="100" x="-0.641" as="geometry">
+            <mxPoint y="-1" as="offset" />
+            <mxPoint x="220" y="390" as="sourcePoint" />
+            <mxPoint x="220" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-16" edge="1" parent="1" source="gHWMmM7ofcgEgesKH2sl-7" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=10;fontColor=#000000;strokeWidth=2;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" target="gHWMmM7ofcgEgesKH2sl-11" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;路由转发&lt;/font&gt;">
+          <mxGeometry height="100" relative="1" width="100" x="0.0014" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="400" y="291" as="sourcePoint" />
+            <mxPoint x="620" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-17" edge="1" parent="1" source="gHWMmM7ofcgEgesKH2sl-7" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=15;fontColor=#000000;strokeWidth=2;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="gHWMmM7ofcgEgesKH2sl-12" value="路由转发">
+          <mxGeometry height="100" relative="1" width="100" x="-0.7377" y="2" as="geometry">
+            <mxPoint y="1" as="offset" />
+            <mxPoint x="400" y="340" as="sourcePoint" />
+            <mxPoint x="840" y="595" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-18" edge="1" parent="1" source="gHWMmM7ofcgEgesKH2sl-9" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;entryX=0.5;entryY=1;fontSize=15;fontColor=#000000;strokeWidth=2;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="gHWMmM7ofcgEgesKH2sl-8" value="&lt;span style=&quot;background-color: rgb(169, 196, 235);&quot;&gt;同步调用: 获取用户信息&lt;/span&gt;">
+          <mxGeometry height="100" relative="1" width="100" x="0.0039" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="840" y="175" as="sourcePoint" />
+            <mxPoint x="800" y="175" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-19" edge="1" parent="1" source="gHWMmM7ofcgEgesKH2sl-9" style="endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=8 8;exitX=0.75;exitY=0;entryX=0;entryY=0.5;fontSize=15;fontColor=#000000;strokeWidth=2;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" target="gHWMmM7ofcgEgesKH2sl-11" value="&lt;span style=&quot;background-color: rgb(185, 224, 165);&quot;&gt;异步消息: 创建协作群组&lt;/span&gt;">
+          <mxGeometry height="100" relative="1" width="100" x="-0.3011" y="3" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="840" y="390" as="sourcePoint" />
+            <mxPoint x="620" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-20" edge="1" parent="1" source="gHWMmM7ofcgEgesKH2sl-9" style="endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=8 8;exitX=1;exitY=0.25;entryX=0;entryY=0.5;fontSize=15;fontColor=#000000;strokeWidth=2;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" target="gHWMmM7ofcgEgesKH2sl-11" value="&lt;span style=&quot;background-color: rgb(185, 224, 165);&quot;&gt;异步消息: 系统通知推送&lt;/span&gt;">
+          <mxGeometry height="100" relative="1" width="100" x="-0.3885" y="4" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1020" y="390" as="sourcePoint" />
+            <mxPoint x="800" y="529" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-21" edge="1" parent="1" source="gHWMmM7ofcgEgesKH2sl-8" style="endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=8 8;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=10;fontColor=#000000;strokeWidth=2;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" target="gHWMmM7ofcgEgesKH2sl-11" value="&lt;font style=&quot;font-size: 15px; background-color: rgb(185, 224, 165);&quot;&gt;异步消息: 系统通知推送&lt;/font&gt;">
+          <mxGeometry height="100" relative="1" width="100" x="-0.7083" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="620" y="390" as="sourcePoint" />
+            <mxPoint x="620" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-22" edge="1" parent="1" source="gHWMmM7ofcgEgesKH2sl-12" style="endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=8 8;exitX=0.5;exitY=0;entryX=0.5;entryY=1;fontSize=15;fontColor=#000000;strokeWidth=2;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="gHWMmM7ofcgEgesKH2sl-11" value="&lt;span style=&quot;background-color: rgb(185, 224, 165);&quot;&gt;异步消息: 系统通知推送&lt;/span&gt;">
+          <mxGeometry height="100" relative="1" width="100" x="0.0353" y="-1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="400" y="595" as="sourcePoint" />
+            <mxPoint x="440" y="595" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=top;strokeWidth=2;textOpacity=80;fontColor=#000000;" value="&lt;font style=&quot;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;用户服务 (nexusgo-user)&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b style=&quot;&quot;&gt;数据库表：&lt;/b&gt;&lt;br&gt;user, user_social, user_follows,&lt;br&gt;user_tag, user_checkins,&lt;br&gt;user_preferences (6张表)&lt;br&gt;&lt;br&gt;&lt;b style=&quot;&quot;&gt;对外服务：&lt;/b&gt;&lt;br&gt;用户CRUD / OAuth2登录&lt;br&gt;社交关系 / 偏好设置&lt;br&gt;&lt;br&gt;端口: 9001&lt;/font&gt;" vertex="1">
+          <mxGeometry height="200" width="280" x="-460" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-23" edge="1" parent="1" source="gHWMmM7ofcgEgesKH2sl-7" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;fontSize=10;fontColor=#000000;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="gHWMmM7ofcgEgesKH2sl-8" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="280" y="108" as="sourcePoint" />
+            <mxPoint x="840" y="159" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gHWMmM7ofcgEgesKH2sl-13" edge="1" parent="1" source="gHWMmM7ofcgEgesKH2sl-7" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=15;fontColor=#000000;strokeWidth=2;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="gHWMmM7ofcgEgesKH2sl-8" value="路由转发">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="400" y="225" as="sourcePoint" />
+            <mxPoint x="440" y="225" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
