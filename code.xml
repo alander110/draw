@@ -1083,14 +1083,17 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="p6-4PUnEGeufBik4l3Q2-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8f0;strokeColor=#F28E2B;strokeWidth=2;opacity=30;" value="" vertex="1">
+          <mxGeometry height="1020" width="900" x="860" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-4PUnEGeufBik4l3Q2-63" parent="1" style="fillColor=#E15759;strokeColor=#a01010;opacity=60;" value="" vertex="1">
+          <mxGeometry height="280" width="18" x="1296" y="350" as="geometry" />
+        </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fff4;strokeColor=#59A14F;strokeWidth=2;opacity=30;" value="" vertex="1">
           <mxGeometry height="1020" width="790" x="30" y="70" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-3" parent="1" style="text;html=1;strokeColor=#59A14F;fillColor=#d4edda;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;fontColor=#59A14F;" value="✅ 正常路径（Normal Path）" vertex="1">
           <mxGeometry height="36" width="690" x="80" y="80" as="geometry" />
-        </mxCell>
-        <mxCell id="p6-4PUnEGeufBik4l3Q2-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8f0;strokeColor=#F28E2B;strokeWidth=2;opacity=30;" value="" vertex="1">
-          <mxGeometry height="1020" width="900" x="860" y="70" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-5" parent="1" style="text;html=1;strokeColor=#F28E2B;fillColor=#fff3cd;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;fontColor=#F28E2B;" value="⚠️ 超时重试路径（Timeout Retry Path）" vertex="1">
           <mxGeometry height="36" width="800" x="910" y="80" as="geometry" />
@@ -1255,11 +1258,11 @@
             <mxPoint x="1120" y="371" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="p6-4PUnEGeufBik4l3Q2-43" parent="1" style="text;html=1;strokeColor=#E15759;fillColor=#fce4e4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#c0392b;" value="定时器触发，检查 messageId 仍在&#xa;pendingMessages 中" vertex="1">
-          <mxGeometry height="36" width="135" x="1314" y="352" as="geometry" />
+        <mxCell id="p6-4PUnEGeufBik4l3Q2-43" parent="1" style="text;html=1;strokeColor=#E15759;fillColor=#fce4e4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#c0392b;" value="定时器触发，检查 messageId 仍在pendingMessages 中" vertex="1">
+          <mxGeometry height="30" width="135" x="1314" y="350" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-44" parent="1" style="text;html=1;strokeColor=none;fillColor=#fff3cd;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#856404;" value="④ 第1次重试 (retryCount=1, maxRetries=3)" vertex="1">
-          <mxGeometry height="21" width="180" x="1316" y="400" as="geometry" />
+          <mxGeometry height="25" width="130" x="1350" y="395" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-45" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#F28E2B;strokeWidth=2;verticalAlign=bottom;" value="">
           <mxGeometry relative="1" as="geometry">
@@ -1271,10 +1274,10 @@
           <mxGeometry height="30" width="30" x="1460" y="410" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-47" parent="1" style="text;html=1;strokeColor=#E15759;fillColor=#fce4e4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#E15759;" value="⏱ 5秒超时" vertex="1">
-          <mxGeometry height="26" width="110" x="1201" y="451" as="geometry" />
+          <mxGeometry height="26" width="110" x="1186" y="453" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-48" parent="1" style="text;html=1;strokeColor=none;fillColor=#fff3cd;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#856404;" value="⑤ 第2次重试 (retryCount=2)" vertex="1">
-          <mxGeometry height="26" width="130" x="1350" y="451" as="geometry" />
+          <mxGeometry height="25" width="130" x="1350" y="451" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-49" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#F28E2B;strokeWidth=2;" value="">
           <mxGeometry relative="1" as="geometry">
@@ -1286,7 +1289,7 @@
           <mxGeometry height="30" width="30" x="1460" y="466" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-51" parent="1" style="text;html=1;strokeColor=#E15759;fillColor=#fce4e4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#E15759;" value="⏱ 5秒超时" vertex="1">
-          <mxGeometry height="26" width="110" x="1200" y="504" as="geometry" />
+          <mxGeometry height="26" width="110" x="1185.5" y="504" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-52" parent="1" style="text;html=1;strokeColor=none;fillColor=#fff3cd;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#856404;" value="⑥ 第3次重试 (retryCount=3)" vertex="1">
           <mxGeometry height="26" width="130" x="1350" y="503" as="geometry" />
@@ -1300,14 +1303,17 @@
         <mxCell id="p6-4PUnEGeufBik4l3Q2-54" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontColor=#E15759;fontStyle=1;" value="✕" vertex="1">
           <mxGeometry height="30" width="30" x="1460" y="518" as="geometry" />
         </mxCell>
-        <mxCell id="p6-4PUnEGeufBik4l3Q2-55" parent="1" style="text;html=1;strokeColor=#E15759;fillColor=#fce4e4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#c0392b;" value="⑦ 第3次重试后仍超时&#xa;从 pendingMessages 中移除 messageId=yyy&#xa;记录警告日志 (WARN log)" vertex="1">
-          <mxGeometry height="50" width="130" x="1316.5" y="570" as="geometry" />
-        </mxCell>
-        <mxCell id="p6-4PUnEGeufBik4l3Q2-56" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#E15759;strokeWidth=1.5;" value="">
+        <mxCell id="p6-4PUnEGeufBik4l3Q2-56" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#E15759;strokeWidth=1.5;rounded=0;curved=1;" value="">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1305" y="576" as="sourcePoint" />
-            <mxPoint x="1305" y="601" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1400" y="594" />
+            </Array>
+            <mxPoint x="1314" y="580" as="sourcePoint" />
+            <mxPoint x="1314" y="605" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="p6-4PUnEGeufBik4l3Q2-55" parent="1" style="text;html=1;strokeColor=#E15759;fillColor=#fce4e4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#c0392b;" value="⑦ 第3次重试后仍超时&#xa;从 pendingMessages 中移除 messageId=yyy&#xa;记录警告日志 (WARN log)" vertex="1">
+          <mxGeometry height="50" width="130" x="1360" y="570" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-57" parent="1" style="text;html=1;strokeColor=none;fillColor=#fff3cd;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#856404;" value="⑧ 投递到 IM_MESSAGE_STORAGE_TOPIC&#xa;异步持久化到 MySQL" vertex="1">
           <mxGeometry height="33" width="180" x="1390" y="630" as="geometry" />
@@ -1332,9 +1338,6 @@
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-62" parent="1" style="fillColor=#F28E2B;strokeColor=#cc6a00;opacity=60;" value="" vertex="1">
           <mxGeometry height="430" width="18" x="1111" y="260" as="geometry" />
-        </mxCell>
-        <mxCell id="p6-4PUnEGeufBik4l3Q2-63" parent="1" style="fillColor=#E15759;strokeColor=#a01010;opacity=60;" value="" vertex="1">
-          <mxGeometry height="280" width="18" x="1296" y="350" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-64" parent="1" style="fillColor=#F28E2B;strokeColor=#cc6a00;opacity=60;" value="" vertex="1">
           <mxGeometry height="80" width="18" x="1646" y="660" as="geometry" />
