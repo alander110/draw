@@ -1079,7 +1079,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="wZrhmU-XDdmpkFtuLybO" name="5-4：消息ACK确认与超时重试时序图">
-    <mxGraphModel dx="2357" dy="1238" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2175" dy="1143" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1130,13 +1130,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-13" parent="1" style="text;html=1;strokeColor=none;fillColor=#e8f5e9;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#2d6a4f;" value="① Send Message&#xa;(IM_SINGLE_CHAT, code=1003)&#xa;messageId=xxx, 内容=消息体" vertex="1">
-          <mxGeometry height="46" width="225" x="145" y="244" as="geometry" />
+          <mxGeometry height="46" width="125" x="145" y="244" as="geometry" />
         </mxCell>
-        <mxCell id="p6-4PUnEGeufBik4l3Q2-14" edge="1" parent="1" source="p6-4PUnEGeufBik4l3Q2-13" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=2;exitX=1;exitY=0.5;exitDX=0;exitDY=0;entryX=0;entryY=0.5;entryDX=0;entryDY=0;" target="p6-4PUnEGeufBik4l3Q2-9" value="">
+        <mxCell id="p6-4PUnEGeufBik4l3Q2-14" edge="1" parent="1" source="p6-4PUnEGeufBik4l3Q2-13" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=2;exitX=1;exitY=0.5;exitDX=0;exitDY=0;entryX=0.111;entryY=0.078;entryDX=0;entryDY=0;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;" target="p6-4PUnEGeufBik4l3Q2-23" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="p6-4PUnEGeufBik4l3Q2-15" parent="1" style="text;html=1;strokeColor=none;fillColor=#e8f5e9;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#2d6a4f;" value="② 转发私聊消息" vertex="1">
-          <mxGeometry height="30" width="140" x="400" y="320" as="geometry" />
+        <mxCell id="p6-4PUnEGeufBik4l3Q2-15" parent="1" style="text;html=1;strokeColor=none;fillColor=#e8f5e9;align=center;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#2d6a4f;arcSize=49;" value="② 转发私聊消息" vertex="1">
+          <mxGeometry height="26" width="140" x="400" y="314" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-16" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=2;" value="">
           <mxGeometry relative="1" as="geometry">
@@ -1145,16 +1145,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-17" parent="1" style="text;html=1;strokeColor=none;fillColor=#e8f5e9;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#2d6a4f;" value="③ ACK确认&#xa;(IM_ACK_MSG, code=1006)&#xa;messageId=xxx" vertex="1">
-          <mxGeometry height="46" width="200" x="400" y="376" as="geometry" />
+          <mxGeometry height="40" width="200" x="400" y="360" as="geometry" />
         </mxCell>
-        <mxCell id="p6-4PUnEGeufBik4l3Q2-18" edge="1" parent="1" style="endArrow=open;endFill=0;html=1;strokeColor=#59A14F;strokeWidth=2;dashed=1;dashPattern=6 3;" value="">
+        <mxCell id="p6-4PUnEGeufBik4l3Q2-18" edge="1" parent="1" style="endArrow=open;endFill=0;html=1;strokeColor=#59A14F;strokeWidth=2;dashed=1;dashPattern=6 3;verticalAlign=bottom;" value="">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="655" y="399" as="sourcePoint" />
             <mxPoint x="380" y="399" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-19" parent="1" style="text;html=1;strokeColor=#59A14F;fillColor=#e8f5e9;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#2d6a4f;" value="④ MessageAckManager.handleMsgAck(messageId)&#xa;从 pendingMessages ConcurrentHashMap 中移除该消息" vertex="1">
-          <mxGeometry height="46" width="310" x="220" y="454" as="geometry" />
+          <mxGeometry height="56" width="210" x="420" y="453" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-20" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=1.5;exitX=1;exitY=0;exitDX=0;exitDY=0;entryX=1;entryY=1;entryDX=0;entryDY=0;curved=1;" value="">
           <mxGeometry relative="1" as="geometry">
@@ -1224,7 +1224,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-35" parent="1" style="text;html=1;strokeColor=none;fillColor=#fff3cd;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#856404;" value="① Send Message&#xa;messageId=yyy" vertex="1">
-          <mxGeometry height="36" width="160" x="945" y="244" as="geometry" />
+          <mxGeometry height="21" width="160" x="948" y="240" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-36" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#F28E2B;strokeWidth=2;" value="">
           <mxGeometry relative="1" as="geometry">
@@ -1233,10 +1233,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-37" parent="1" style="text;html=1;strokeColor=#F28E2B;fillColor=#fff3cd;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#856404;" value="pendingMessages.put(messageId, messageInfo)&#xa;启动5秒定时器" vertex="1">
-          <mxGeometry height="36" width="260" x="1130" y="244" as="geometry" />
+          <mxGeometry height="30" width="150" x="1130" y="244" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-38" parent="1" style="text;html=1;strokeColor=none;fillColor=#fff3cd;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#856404;" value="② 转发消息（接收方网络异常）" vertex="1">
-          <mxGeometry height="30" width="220" x="1240" y="300" as="geometry" />
+          <mxGeometry height="30" width="220" x="1241" y="284" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-39" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#F28E2B;strokeWidth=2;" value="">
           <mxGeometry relative="1" as="geometry">
@@ -1248,7 +1248,7 @@
           <mxGeometry height="30" width="30" x="1460" y="300" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-41" parent="1" style="text;html=1;strokeColor=#E15759;fillColor=#fce4e4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=10;fontColor=#E15759;fontStyle=1;" value="⏱ 5秒超时，未收到ACK" vertex="1">
-          <mxGeometry height="30" width="260" x="1130" y="356" as="geometry" />
+          <mxGeometry height="30" width="120" x="1150" y="355" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-42" edge="1" parent="1" source="p6-4PUnEGeufBik4l3Q2-41" style="endArrow=open;endFill=0;html=1;strokeColor=#E15759;strokeWidth=1.5;dashed=1;exitX=0;exitY=0.5;exitDX=0;exitDY=0;" value="">
           <mxGeometry relative="1" as="geometry">
@@ -1256,12 +1256,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-43" parent="1" style="text;html=1;strokeColor=#E15759;fillColor=#fce4e4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#c0392b;" value="定时器触发，检查 messageId 仍在&#xa;pendingMessages 中" vertex="1">
-          <mxGeometry height="36" width="220" x="1315" y="356" as="geometry" />
+          <mxGeometry height="36" width="135" x="1314" y="352" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-44" parent="1" style="text;html=1;strokeColor=none;fillColor=#fff3cd;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#856404;" value="④ 第1次重试 (retryCount=1, maxRetries=3)" vertex="1">
-          <mxGeometry height="30" width="220" x="1240" y="410" as="geometry" />
+          <mxGeometry height="21" width="180" x="1316" y="400" as="geometry" />
         </mxCell>
-        <mxCell id="p6-4PUnEGeufBik4l3Q2-45" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#F28E2B;strokeWidth=2;" value="">
+        <mxCell id="p6-4PUnEGeufBik4l3Q2-45" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#F28E2B;strokeWidth=2;verticalAlign=bottom;" value="">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1120" y="425" as="sourcePoint" />
             <mxPoint x="1475" y="425" as="targetPoint" />
@@ -1271,10 +1271,10 @@
           <mxGeometry height="30" width="30" x="1460" y="410" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-47" parent="1" style="text;html=1;strokeColor=#E15759;fillColor=#fce4e4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#E15759;" value="⏱ 5秒超时" vertex="1">
-          <mxGeometry height="26" width="110" x="1200" y="468" as="geometry" />
+          <mxGeometry height="26" width="110" x="1201" y="451" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-48" parent="1" style="text;html=1;strokeColor=none;fillColor=#fff3cd;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#856404;" value="⑤ 第2次重试 (retryCount=2)" vertex="1">
-          <mxGeometry height="26" width="220" x="1320" y="468" as="geometry" />
+          <mxGeometry height="26" width="130" x="1350" y="451" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-49" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#F28E2B;strokeWidth=2;" value="">
           <mxGeometry relative="1" as="geometry">
@@ -1286,10 +1286,10 @@
           <mxGeometry height="30" width="30" x="1460" y="466" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-51" parent="1" style="text;html=1;strokeColor=#E15759;fillColor=#fce4e4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#E15759;" value="⏱ 5秒超时" vertex="1">
-          <mxGeometry height="26" width="110" x="1200" y="520" as="geometry" />
+          <mxGeometry height="26" width="110" x="1200" y="504" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-52" parent="1" style="text;html=1;strokeColor=none;fillColor=#fff3cd;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#856404;" value="⑥ 第3次重试 (retryCount=3)" vertex="1">
-          <mxGeometry height="26" width="220" x="1320" y="520" as="geometry" />
+          <mxGeometry height="26" width="130" x="1350" y="503" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-53" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#F28E2B;strokeWidth=2;" value="">
           <mxGeometry relative="1" as="geometry">
@@ -1301,7 +1301,7 @@
           <mxGeometry height="30" width="30" x="1460" y="518" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-55" parent="1" style="text;html=1;strokeColor=#E15759;fillColor=#fce4e4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#c0392b;" value="⑦ 第3次重试后仍超时&#xa;从 pendingMessages 中移除 messageId=yyy&#xa;记录警告日志 (WARN log)" vertex="1">
-          <mxGeometry height="50" width="350" x="1130" y="576" as="geometry" />
+          <mxGeometry height="50" width="130" x="1316.5" y="570" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-56" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#E15759;strokeWidth=1.5;" value="">
           <mxGeometry relative="1" as="geometry">
@@ -1310,7 +1310,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-57" parent="1" style="text;html=1;strokeColor=none;fillColor=#fff3cd;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#856404;" value="⑧ 投递到 IM_MESSAGE_STORAGE_TOPIC&#xa;异步持久化到 MySQL" vertex="1">
-          <mxGeometry height="36" width="220" x="1350" y="648" as="geometry" />
+          <mxGeometry height="33" width="180" x="1390" y="630" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-58" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#F28E2B;strokeWidth=2;" value="">
           <mxGeometry relative="1" as="geometry">
@@ -1319,7 +1319,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-59" parent="1" style="text;html=1;strokeColor=#59A14F;fillColor=#d4edda;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#155724;" value="⑨ 接收方重新上线&#xa;通过历史消息 API 查询，消息已在 MySQL 中" vertex="1">
-          <mxGeometry height="40" width="270" x="1350" y="714" as="geometry" />
+          <mxGeometry height="40" width="141" x="1500" y="691" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-60" edge="1" parent="1" style="endArrow=open;endFill=0;html=1;strokeColor=#59A14F;strokeWidth=1.5;dashed=1;" value="">
           <mxGeometry relative="1" as="geometry">
@@ -1343,58 +1343,58 @@
           <mxGeometry height="76" width="790" x="30" y="790" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-66" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=1.5;" value="" vertex="1">
-          <mxGeometry height="54" width="1730" x="30" y="1040" as="geometry" />
+          <mxGeometry height="54" width="1730" x="30" y="980" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-67" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontStyle=1;fontColor=#333333;" value="图例：" vertex="1">
-          <mxGeometry height="30" width="60" x="46" y="1050" as="geometry" />
+          <mxGeometry height="30" width="60" x="46" y="990" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-68" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#4E79A7;strokeWidth=2;" value="">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="120" y="1065" as="sourcePoint" />
-            <mxPoint x="190" y="1065" as="targetPoint" />
+            <mxPoint x="120" y="1005" as="sourcePoint" />
+            <mxPoint x="190" y="1005" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-69" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#333333;" value="消息发送/转发" vertex="1">
-          <mxGeometry height="30" width="110" x="196" y="1050" as="geometry" />
+          <mxGeometry height="30" width="110" x="196" y="990" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-70" edge="1" parent="1" style="endArrow=open;endFill=0;html=1;strokeColor=#59A14F;strokeWidth=2;dashed=1;dashPattern=6 3;" value="">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="330" y="1065" as="sourcePoint" />
-            <mxPoint x="400" y="1065" as="targetPoint" />
+            <mxPoint x="330" y="1005" as="sourcePoint" />
+            <mxPoint x="400" y="1005" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-71" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#333333;" value="ACK确认（虚线）" vertex="1">
-          <mxGeometry height="30" width="130" x="406" y="1050" as="geometry" />
+          <mxGeometry height="30" width="130" x="406" y="990" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-72" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontColor=#E15759;fontStyle=1;" value="✕" vertex="1">
-          <mxGeometry height="30" width="30" x="558" y="1050" as="geometry" />
+          <mxGeometry height="30" width="30" x="558" y="990" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-73" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#333333;" value="超时/失败标记" vertex="1">
-          <mxGeometry height="30" width="110" x="592" y="1050" as="geometry" />
+          <mxGeometry height="30" width="110" x="592" y="990" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-74" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;" value="✅" vertex="1">
-          <mxGeometry height="30" width="30" x="722" y="1050" as="geometry" />
+          <mxGeometry height="30" width="30" x="722" y="990" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-75" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#333333;" value="成功/已送达标记" vertex="1">
-          <mxGeometry height="30" width="130" x="756" y="1050" as="geometry" />
+          <mxGeometry height="30" width="130" x="756" y="990" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-76" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d4edda;strokeColor=#59A14F;strokeWidth=2;" value="" vertex="1">
-          <mxGeometry height="24" width="24" x="910" y="1053" as="geometry" />
+          <mxGeometry height="24" width="24" x="910" y="993" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-77" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#333333;" value="正常路径（绿色）" vertex="1">
-          <mxGeometry height="30" width="140" x="940" y="1050" as="geometry" />
+          <mxGeometry height="30" width="140" x="940" y="990" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-78" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3cd;strokeColor=#F28E2B;strokeWidth=2;" value="" vertex="1">
-          <mxGeometry height="24" width="24" x="1100" y="1053" as="geometry" />
+          <mxGeometry height="24" width="24" x="1100" y="993" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-79" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#333333;" value="超时重试路径（橙色）" vertex="1">
-          <mxGeometry height="30" width="160" x="1130" y="1050" as="geometry" />
+          <mxGeometry height="30" width="160" x="1130" y="990" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-80" parent="1" style="fillColor=#4E79A7;strokeColor=#2d5e8e;opacity=60;" value="" vertex="1">
-          <mxGeometry height="22" width="12" x="1308" y="1055" as="geometry" />
+          <mxGeometry height="22" width="12" x="1308" y="995" as="geometry" />
         </mxCell>
         <mxCell id="p6-4PUnEGeufBik4l3Q2-81" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#333333;" value="激活条（执行生命线）" vertex="1">
-          <mxGeometry height="30" width="170" x="1326" y="1050" as="geometry" />
+          <mxGeometry height="30" width="170" x="1326" y="990" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
