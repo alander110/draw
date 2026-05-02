@@ -1496,7 +1496,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="yThCKtsgf5r57pLvZqIU" name="5-6：行程协作编辑完整时序图">
-    <mxGraphModel dx="3003" dy="1558" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3431" dy="1780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1536,19 +1536,20 @@
         <mxCell id="kYNHzLGXDEgpCWb9Tzq3-50" parent="1" style="shape=rect;html=1;fillColor=none;strokeColor=#B07AA1;strokeWidth=1;dashed=1;dashPattern=8 8;whiteSpace=wrap;fontSize=12;" value="" vertex="1">
           <mxGeometry height="1550" width="2" x="1959" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-52" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#3399FF;strokeWidth=2;fontColor=#3399FF;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;labelBorderColor=default;" value="&lt;b&gt;步骤2&lt;/b&gt;：ACTIVITY_LOCK (code=1011)&lt;br&gt;{itineraryId: 42, activityId: 128, field: &quot;title&quot;}&lt;br&gt;协议：WebSocket二进制帧">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-52" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#3399FF;strokeWidth=2;fontColor=#3399FF;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;labelBorderColor=default;" value="&lt;b&gt;步骤2&lt;/b&gt;：ACTIVITY_LOCK (code=1011)">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
             <mxPoint x="180" y="300" as="sourcePoint" />
             <mxPoint x="600" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-53" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#006600;" value="&lt;b&gt;步骤3&lt;/b&gt;：tryLock(&quot;42:128:title&quot;, userId=A)&lt;br&gt;返回：加锁成功（锁当前空闲）">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-53" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#59A14F;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#006600;" value="&lt;b&gt;步骤3&lt;/b&gt;：tryLock&lt;br&gt;返回：加锁成功（锁当前空闲）">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="400" as="sourcePoint" />
             <mxPoint x="950" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-54" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;strokeColor=#3399FF;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#3399FF;" value="&lt;b&gt;步骤4&lt;/b&gt;：锁获取成功响应&lt;br&gt;{success: true, lockKey: &quot;42:128:title&quot;}">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-54" edge="1" parent="1" style="endArrow=open;dashed=1;html=1;strokeColor=#3399FF;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#3399FF;" value="&lt;b&gt;步骤4&lt;/b&gt;：锁获取成功响应">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="500" as="sourcePoint" />
             <mxPoint x="180" y="500" as="targetPoint" />
@@ -1584,19 +1585,19 @@
             <mxPoint x="1300" y="1448" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-62" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#B07AA1;strokeWidth=2;fontColor=#6600CC;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤13&lt;/b&gt;：广播 ACTIVITY_EDIT (code=1013)&lt;br&gt;{activityId: 128, field: &quot;title&quot;, value: &quot;外滩夜景游览&quot;, editedBy: &quot;张三&quot;}">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-62" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#B07AA1;strokeWidth=2;fontColor=#6600CC;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤13&lt;/b&gt;：广播 ACTIVITY_EDIT (code=1013)">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="1548" as="sourcePoint" />
             <mxPoint x="1960" y="1548" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-64" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#3399FF;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#3399FF;" value="&lt;b&gt;步骤5&lt;/b&gt;：ACTIVITY_CURSOR (code=1014)&lt;br&gt;{itineraryId: 42, detailId: 129, field: &quot;startTime&quot;}">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-64" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#3399FF;strokeWidth=2;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;fontColor=#3399FF;" value="&lt;b&gt;步骤5&lt;/b&gt;：ACTIVITY_CURSOR (code=1014)">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="180" y="700" as="sourcePoint" />
             <mxPoint x="600" y="700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-65" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#6600CC;strokeWidth=2;fontColor=#6600CC;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤6&lt;/b&gt;：广播 ACTIVITY_CURSOR (code=1014)&lt;br&gt;{itineraryId: 42, detailId: 129, field: &quot;startTime&quot;}">
+        <mxCell id="kYNHzLGXDEgpCWb9Tzq3-65" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#6600CC;strokeWidth=2;fontColor=#6600CC;labelBackgroundColor=none;fontSize=19;verticalAlign=bottom;" value="&lt;b&gt;步骤6&lt;/b&gt;：广播 ACTIVITY_CURSOR (code=1014)">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="800" as="sourcePoint" />
             <mxPoint x="1960" y="800" as="targetPoint" />
