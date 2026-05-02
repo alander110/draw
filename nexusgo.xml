@@ -1820,7 +1820,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ai-travel-flow" name="6-3：AI行程规划交互流程图">
-    <mxGraphModel dx="1848" dy="958" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1250" pageHeight="1600" math="0" shadow="0">
+    <mxGraphModel dx="2184" dy="1133" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1250" pageHeight="1600" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1958,7 +1958,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="xVQdka87wn4_zDI4mxUz-90" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FF9933;strokeColor=#B09500;fontSize=12;fontFamily=Microsoft YaHei;verticalAlign=top;spacingTop=5;shadow=1;fontColor=#000000;" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp;7&amp;nbsp;&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;查询缓存&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="480" x="690" y="629" as="geometry" />
+          <mxGeometry height="40" width="480" x="690" y="639.5" as="geometry" />
         </mxCell>
         <mxCell id="xVQdka87wn4_zDI4mxUz-96" edge="1" parent="1" source="22" style="rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.762;entryY=-0.001;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;strokeColor=#F28E2B;exitX=0.75;exitY=1;exitDx=0;exitDy=0;dashed=1;dashPattern=8 8;" target="30">
           <mxGeometry relative="1" as="geometry" />
